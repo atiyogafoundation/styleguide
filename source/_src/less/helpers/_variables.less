@@ -8,7 +8,7 @@
 //## Gray and brand colors for use across Bootstrap.
 
 @gray-base:              #000;
-@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-darker:            #1e1e1e; // #222
 @gray-dark:              lighten(@gray-base, 20%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
 @gray-light:             lighten(@gray-base, 46.7%); // #777
@@ -31,7 +31,7 @@
 @text-color:            #646463;
 
 //** Global textual link color.
-@link-color:            #1e1e1e;
+@link-color:            @gray-darker;
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
 //** Link hover decoration.
@@ -75,7 +75,7 @@
 @headings-font-family:    'Noto Sans', sans-serif;;
 @headings-font-weight:    700;
 @headings-line-height:    1.1851851852;
-@headings-color:          #1e1e1e;
+@headings-color:          @gray-darker;
 
 
 //== Iconography
@@ -859,13 +859,14 @@
 //** Abbreviations and acronyms border color
 @abbr-border-color:           @gray-light;
 //** Headings small color
-@headings-small-color:        @gray-light;
+@headings-small-color:        inherit;
 //** Blockquote small color
 @blockquote-small-color:      @gray-light;
 //** Blockquote font size
-@blockquote-font-size:        (@font-size-base * 1.25);
+@blockquote-font-size:        @font-size-large;
+@blockquote-font-size-mobile: @font-size-base-mobile;
 //** Blockquote border color
-@blockquote-border-color:     @gray-lighter;
+@blockquote-border-color:     @gray-darker;
 //** Page header border color
 @page-header-border-color:    @gray-lighter;
 //** Width of horizontal description list titles
