@@ -1,0 +1,29 @@
+{
+  "name": "projectname",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-foreach": "^0.1.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-load-plugins": "^1.3.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "less-plugin-glob": "^1.1.1",
+    "merge-stream": "^1.0.0"
+  },
+  "scripts" : {
+    "preinstall" : "npm link browser-sync jshint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:basilico/pattern-lab-php.git"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "paths" : {
+    "source" : {
+      "root": "./source/",
+      "patterns" : "./source/_patterns/",
+      "data" : "./source/_data/",
+      "meta": "./source/_meta/",
+      "annotations" : "./source/_annotations/",
+      "styleguide" : "./vendor/pattern-lab/styleguidekit-assets-default/dist/",
+      "patternlabFiles" : "./node_modules/styleguidekit-mustache-default/views/",
+      "js" : "./source/js",
+      "images" : "./source/img",
+      "media" : "./source/media",
+      "fonts" : "./source/fonts",
+      "css" : "./source/css/",
+      "ajax" : "./source/route/"
+    },
+    "public" : {
+      "root" : "./public/",
+      "patterns" : "./public/patterns/",
+      "data" : "./public/styleguide/data/",
+      "annotations" : "./public/annotations/",
+      "styleguide" : "./public/styleguide/",
+      "js" : "./public/js",
+      "images" : "./public/img",
+      "media" : "./public/media",
+      "fonts" : "./public/fonts",
+      "css" : "./public/css",
+      "ajax" : "./public/route/"
+    },
+    "builds" : {
+      "less" : {
+        "watch" : "source/_src/less/**",
+        "src" : "source/_src/less/*.less",
+        "dist" : "source/css"
+      },
+      "js" : {
+        "src" : "source/_src/js/*.js",
+        "dist" : "source/js",
+        "vendors" : {
+          "top" : [
+            "bower_components/picturefill/dist/picturefill.min.js",
+            "bower_components/mobile-detect/mobile-detect.min.js",
+            "bower_components/jquery/dist/jquery.min.js",
+            "source/_src/js/mobile-detect.js",
+            "bower_components/moment/min/moment.min.js",
+            "bower_components/bootstrap/dist/js/bootstrap.min.js",
+            "bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"
+          ],
+          "bottom" : [
+            "bower_components/gsap/src/minified/TweenMax.min.js",
+            "bower_components/gsap/src/minified/easing/EasePack.min.js",
+            "bower_components/gsap/src/minified/jquery.gsap.min.js",
+            "bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js",
+            "bower_components/jScrollPane/script/jquery.jscrollpane.min.js",
+            "bower_components/jScrollPane/script/jquery.mousewheel.js",
+            "bower_components/waypoints/lib/jquery.waypoints.min.js",
+            "bower_components/Swiper/dist/js/swiper.jquery.min.js",
+            "bower_components/lazysizes/lazysizes.min.js",
+            "bower_components/lazysizes/plugins/bgset/ls.bgset.min.js",
+            "bower_components/lazysizes/plugins/parent-fit/ls.parent-fit.js"
+          ]
+        }
+      }
+    }
+  }
+}

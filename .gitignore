@@ -1,0 +1,7 @@
+*.sublime-workspace
+bower_components
+export/*
+node_modules
+public/*
+source/styleguide/*
+vendor
