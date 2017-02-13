@@ -6,8 +6,28 @@
       "name": "Shangshung",
       "folder_exclude_patterns": [
         "node_modules",
-        "bower_components"
+        // "bower_components",
+        "vendor"
+      ],
+      "file_exclude_patterns": [
+        "*.sublime-*"
       ]
-		}
+		},
+    {
+      "name": "Source",
+      "path": "./source/_src"
+    },
+    {
+      "name": "Patterns",
+      "path": "./source/_patterns"
+    },
+    {
+      "name": "Data",
+      "path": "./source/_data"
+    },
+    {
+      "name": "Annotations",
+      "path": "./source/_annotations"
+    }
 	]
 }

@@ -34,31 +34,27 @@
         "src" : "source/_src/less/*.less",
         "dist" : "source/css"
       },
+      "css": {
+        "vendors": [
+          "bower_components/lightgallery/dist/css/lightgallery.min.css",
+          "bower_components/lightgallery/dist/css/lg-transitions.min.css",
+          "bower_components/outdated-browser/outdatedbrowser/outdatedbrowser.min.css"
+        ]
+      },
       "js" : {
         "src" : "source/_src/js/*.js",
         "dist" : "source/js",
         "vendors" : {
           "top" : [
-            "bower_components/picturefill/dist/picturefill.min.js",
-            "bower_components/mobile-detect/mobile-detect.min.js",
-            "bower_components/jquery/dist/jquery.min.js",
-            "source/_src/js/mobile-detect.js",
-            "bower_components/moment/min/moment.min.js",
-            "bower_components/bootstrap/dist/js/bootstrap.min.js",
-            "bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"
+            "bower_components/picturefill/dist/picturefill.min.js"
           ],
           "bottom" : [
-            "bower_components/gsap/src/minified/TweenMax.min.js",
-            "bower_components/gsap/src/minified/easing/EasePack.min.js",
-            "bower_components/gsap/src/minified/jquery.gsap.min.js",
-            "bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js",
-            "bower_components/jScrollPane/script/jquery.jscrollpane.min.js",
-            "bower_components/jScrollPane/script/jquery.mousewheel.js",
-            "bower_components/waypoints/lib/jquery.waypoints.min.js",
+            "bower_components/jquery/dist/jquery.min.js",
             "bower_components/Swiper/dist/js/swiper.jquery.min.js",
             "bower_components/lazysizes/lazysizes.min.js",
             "bower_components/lazysizes/plugins/bgset/ls.bgset.min.js",
-            "bower_components/lazysizes/plugins/parent-fit/ls.parent-fit.js"
+            "bower_components/lazysizes/plugins/parent-fit/ls.parent-fit.js",
+            "bower_components/outdated-browser/outdatedbrowser/outdatedbrowser.min.js"
           ]
         }
       }

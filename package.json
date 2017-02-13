@@ -1,6 +1,7 @@
 {
-  "name": "projectname",
+  "name": "shangshung",
   "main": "gulpfile.js",
+  "license": "PRIVATE",
   "dependencies": {},
   "devDependencies": {
     "gulp": "gulpjs/gulp#4.0",
