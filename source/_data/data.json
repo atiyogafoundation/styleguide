@@ -4,5 +4,11 @@
     "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda veniam consequatur perferendis hic harum sit odit fuga, quam delectus quos at quibusdam eveniet fugit molestiae, optio qui quis totam dolorem.Quos quis accusantium eos provident vitae, illo tenetur fuga voluptatibus odio, maxime odit vel cum dolore ipsam consequuntur vero unde. Et non obcaecati aliquid autem! Delectus pariatur, totam error est.Laudantium perferendis, voluptate officia illo repudiandae corporis. Unde veritatis doloribus quod neque eum, accusamus sit quae consequatur nostrum autem, architecto quis, nesciunt magni rerum exercitationem? Optio est veniam at error.",
     "short": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     "tiny": "Lorem ipsum dolor"
+  },
+  "images": {
+    "fullscreen": "https://unsplash.it/1920/1080/?image=16",
+    "16x9": "https://unsplash.it/1280/720/?image=12",
+    "4x3": "https://unsplash.it/1024/768/?image=10",
+    "square": "https://unsplash.it/800/800/?image=16"
   }
 }
