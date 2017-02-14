@@ -41,9 +41,11 @@
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
-@font-family-sans-serif:  "Merriweather", Helvetica, Arial, sans-serif;
+@font-family-primary:     "Merriweather", Helvetica, Arial, sans-serif;
+@font-family-secondary:   "Noto Sans", sans-serif;
+@font-family-sans-serif:  @font-family-primary;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
@@ -67,17 +69,17 @@
 @font-size-h3-mobile:     15px;
 @font-size-h4-mobile:     @font-size-h3-mobile;
 
-@line-height-base:        1.7647058824;
-@line-height-base-mobile: 1.6666666667;
+@line-height-base:            1.7647058824;
+@line-height-base-mobile:     1.6666666667;
 @line-height-computed:        floor((@font-size-base * @line-height-base));
 @line-height-computed-mobile: floor((@font-size-base-mobile * @line-height-base-mobile));
 
 //** By default, this inherits from the `<body>`.
-@headings-font-family:    'Noto Sans', sans-serif;;
-@headings-font-weight:    700;
-@headings-line-height:    1.1851851852;
+@headings-font-family:        @font-family-secondary;
+@headings-font-weight:        700;
+@headings-line-height:        1.1851851852;
 @headings-line-height-mobile: 1.2380952381;
-@headings-color:          @gray-darker;
+@headings-color:              @gray-darker;
 
 
 //== Components
@@ -786,13 +788,9 @@
 
 @breadcrumb-padding-vertical:   8px;
 @breadcrumb-padding-horizontal: 15px;
-//** Breadcrumb background color
-@breadcrumb-bg:                 #f5f5f5;
-//** Breadcrumb text color
+@breadcrumb-bg:                 transparent;
 @breadcrumb-color:              #ccc;
-//** Text color of current page in the breadcrumb
 @breadcrumb-active-color:       @gray-light;
-//** Textual separator for between breadcrumb elements
 @breadcrumb-separator:          "/";
 
 

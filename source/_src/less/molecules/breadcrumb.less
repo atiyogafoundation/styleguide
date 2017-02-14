@@ -1,0 +1,23 @@
+.breadcrumb {
+  text-transform: uppercase;
+  font-family: @font-family-secondary;
+  font-size: @font-size-small-mobile;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: @brand-primary;
+    }
+  }
+
+  > li+li:before {
+    color: @brand-primary;
+  }
+
+  li:last-child {
+    font-weight: 700;
+  }
+}
