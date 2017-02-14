@@ -1,0 +1,42 @@
+.button-icon {
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: @gray-darker;
+  font-family: @font-family-secondary;
+  font-weight: 700;
+  white-space: nowrap;
+  font-size: @font-size-small;
+
+  span {
+    .square(46px);
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    border: 2px solid @gray-darker;
+    font-size: 20px;
+    vertical-align: middle;
+    margin: 0 9px;
+    transition: border-color .2s ease;
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -10px;
+      margin-top: -10px;
+
+      &--play {
+        margin-left: -9px;
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: @brand-primary;
+
+    span {
+      border-color: @brand-primary;
+    }
+  }
+}
