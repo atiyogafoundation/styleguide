@@ -78,3 +78,18 @@ ul {
     }
   }
 }
+
+figcaption {
+  font-size: @font-size-small-mobile;
+  margin-top: @line-height-computed-mobile;
+  margin-bottom: floor(@line-height-computed-mobile / 2);
+  padding: 0 @line-height-computed-mobile;
+  display: block;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: @font-size-small;
+    margin-top: @line-height-computed;
+    margin-bottom: floor(@line-height-computed / 2);
+    padding: 0 @line-height-computed;
+  }
+}
