@@ -13,7 +13,13 @@ blockquote {
   color: @gray-darker;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 60px;
+  padding-left: 20px;
   border-left-width: 2px;
   font-style: italic;
+  font-size: @blockquote-font-size-mobile;
+
+  @media (min-width: @screen-sm-min) {
+    font-size: @blockquote-font-size;
+    padding-left: 60px;
+  }
 }

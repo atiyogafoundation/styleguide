@@ -1,4 +1,9 @@
 body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
+
+  @media (max-width: @screen-xs-max) {
+    font-size: @font-size-base-mobile;
+    line-height: @line-height-base-mobile;
+  }
 }
