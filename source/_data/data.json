@@ -16,5 +16,23 @@
     "1024": "https://unsplash.it/1024/576/?image=12",
     "720": "https://unsplash.it/720/405/?image=12",
     "640": "https://unsplash.it/640/360/?image=12"
+  },
+  "button-icon": {
+    "href": "#",
+    "icon": "play",
+    "text": "Play Video"
+  },
+  "preview": {
+    "image": {
+      "1024": "https://unsplash.it/1024/576/?image=15",
+      "720": "https://unsplash.it/720/405/?image=15",
+      "640": "https://unsplash.it/640/360/?image=15"
+    },
+    "title": "Tibetan Culture Week Arcidosso, Italy",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nobis voluptas officia delectus, laudantium dicta id mollitia, vero maiores consequatur odio alias! Illum repellat repudiandae sint facere natus. Tenetur, eos.",
+    "button-icon": {
+      "icon": "camera",
+      "text": "Open Gallery"
+    }
   }
 }
