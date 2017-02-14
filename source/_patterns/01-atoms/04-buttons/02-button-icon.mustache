@@ -1,4 +1,6 @@
-<a href="#" class="button-icon">
+{{#is_span}}<span class="button-icon">{{/is_span}}
+{{^is_span}}<a href="#" class="button-icon">{{/is_span}}
   <span><i class="icon icon--play"></i></span>
   lorem ipsum
-</a>
+{{#is_span}}</span>{{/is_span}}
+{{^is_span}}</a>{{/is_span}}
