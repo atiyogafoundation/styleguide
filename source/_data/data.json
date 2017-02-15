@@ -23,6 +23,7 @@
     "text": "Play Video"
   },
   "preview": {
+    "href": "#",
     "image": {
       "1024": "https://unsplash.it/1024/576/?image=15",
       "720": "https://unsplash.it/720/405/?image=15",
