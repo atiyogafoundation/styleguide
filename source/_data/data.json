@@ -22,6 +22,10 @@
     "icon": "play",
     "text": "Play Video"
   },
+  "button-link": {
+    "href": "#",
+    "text": "Lorem Ipsum"
+  },
   "preview": {
     "href": "#",
     "image": {
@@ -48,5 +52,12 @@
       { "href": "#", "text": "Consectetur" },
       { "href": "#", "text": "Adipisicing" }
     ]
+  },
+  "aside-text": {
+    "body": "<h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia commodi sequi libero explicabo consequuntur ad, delectus optio magnam, facere molestias perspiciatis, pariatur eveniet? Modi expedita nisi sit, placeat voluptatem natus.</p>",
+    "button-link": {
+      "href": "#",
+      "text": "Read More"
+    }
   }
 }
