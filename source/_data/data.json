@@ -24,6 +24,7 @@
   },
   "button-link": {
     "href": "#",
+    "icon": "plus",
     "text": "Lorem Ipsum"
   },
   "preview": {
@@ -54,9 +55,10 @@
     ]
   },
   "aside-text": {
-    "body": "<h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia commodi sequi libero explicabo consequuntur ad, delectus optio magnam, facere molestias perspiciatis, pariatur eveniet? Modi expedita nisi sit, placeat voluptatem natus.</p>",
+    "body": "<h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia commodi sequi <a href=\"#\">libero explicabo consequuntur</a> ad, delectus optio magnam, facere molestias perspiciatis, pariatur eveniet? Modi expedita nisi sit, placeat voluptatem natus.</p>",
     "button-link": {
       "href": "#",
+      "icon": "plus",
       "text": "Read More"
     }
   }
