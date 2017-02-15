@@ -2,9 +2,10 @@
   .set-hover-color(@hover: @brand-primary) {
     color: @hover;
 
-    span {
+    .icon-circle {
       border-color: @hover;
       color: #fff;
+      transition: border-color .2s ease;
 
       &:before {
         opacity: 1;
@@ -17,7 +18,7 @@
     color: @color;
     border-color: @color;
 
-    span::before {
+    .icon-circle::before {
       background-color: @hover;
     }
 
@@ -36,42 +37,17 @@
   font-size: @font-size-small;
   transition: color .2s ease;
 
-  span {
-    .square(46px);
-    position: relative;
+  .icon-circle::before {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
     border-radius: 100%;
-    display: inline-block;
-    border-width: 2px;
-    border-style: solid;
-    font-size: 20px;
-    vertical-align: middle;
-    margin-right: 9px;
-    transition: border-color .3s ease;
-
-    .icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-left: -10px;
-      margin-top: -10px;
-
-      &--play {
-        margin-left: -9px;
-      }
-    }
-
-    &:before {
-      position: absolute;
-      top: -1px;
-      left: -1px;
-      bottom: -1px;
-      right: -1px;
-      border-radius: 100%;
-      content: '';
-      transition: all .3s ease;
-      opacity: 0;
-      transform: scale(0);
-    }
+    content: '';
+    transition: all .3s ease;
+    opacity: 0;
+    transform: scale(0);
   }
 }
 
@@ -86,5 +62,6 @@
   .icon {
     font-size: 11px;
     margin-right: 3px;
+    color: @brand-primary;
   }
 }
