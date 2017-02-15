@@ -35,5 +35,18 @@
       "icon": "camera",
       "text": "Open Gallery"
     }
+  },
+  "nav-group": {
+    "head": {
+      "href": "#",
+      "text": "Lorem ipsum dolor"
+    },
+    "list": [
+      { "href": "#", "text": "Lorem" },
+      { "href": "#", "text": "Ipsum" },
+      { "href": "#", "text": "Dolor" },
+      { "href": "#", "text": "Consectetur" },
+      { "href": "#", "text": "Adipisicing" }
+    ]
   }
 }
