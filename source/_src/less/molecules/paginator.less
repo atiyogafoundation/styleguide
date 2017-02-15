@@ -1,0 +1,37 @@
+.paginator {
+  .list-unstyled();
+  .list-inline();
+  padding: 0;
+  margin-left: 0;
+  font-family: @font-family-secondary;
+  font-weight: 800;
+  font-size: 13px;
+  text-align: center;
+
+  li {
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    .square(36px);
+    color: @gray-darker;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 34px;
+
+    &:hover,
+    &:focus {
+      color: @brand-primary;
+    }
+
+    &.active {
+      border-radius: 100%;
+      background-color: @gray-darker;
+      color: #fff;
+    }
+  }
+}
