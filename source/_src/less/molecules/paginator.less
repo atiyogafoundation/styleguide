@@ -14,14 +14,14 @@
   }
 
   a {
-    .square(36px);
+    .square(28px);
+    line-height: 26px;
     color: @gray-darker;
     text-decoration: none;
     display: inline-block;
     white-space: nowrap;
     text-align: center;
     vertical-align: middle;
-    line-height: 34px;
 
     &:hover,
     &:focus {
@@ -32,6 +32,13 @@
       border-radius: 100%;
       background-color: @gray-darker;
       color: #fff;
+    }
+  }
+
+  @media (min-width: @screen-sm-min) {
+    a {
+      .square(36px);
+      line-height: 34px;
     }
   }
 }
