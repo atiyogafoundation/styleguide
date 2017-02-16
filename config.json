@@ -42,7 +42,7 @@
         ]
       },
       "js" : {
-        "src" : "source/_src/js/*.js",
+        "src" : "source/_src/js",
         "dist" : "source/js",
         "vendors" : {
           "top" : [

@@ -71,7 +71,7 @@ function watch() {
   gulp.watch(path.resolve(paths().source.styleguide, '**/*.*')).on('change', gulp.series('copy:styleguide', reload));
 
   gulp.watch(path.resolve(paths().builds.less.watch)).on('change', gulp.series('build:less'));
-  gulp.watch(path.resolve(paths().builds.js.src)).on('change', gulp.series('build:js'));
+  gulp.watch(path.resolve(paths().builds.js.src, '*')).on('change', gulp.series('build:js'));
 
 }
 
@@ -95,19 +95,15 @@ gulp.task('build:less', function() {
 });
 
 gulp.task('build:js', function () {
-  return gulp.src(path.resolve(paths().builds.js.src))
+  return gulp.src(path.resolve(paths().builds.js.src, '*'))
     .pipe(plugins.jshint())
     .pipe(plugins.jshint.reporter('default'))
-    .pipe(plugins.foreach(function(stream, file) {
-      return stream
-        .pipe(plugins.sourcemaps.init())
-        .pipe(plugins.uglify())
-        .pipe(plugins.rename(function(path) {
-          path.extname = ".min.js";
-        }))
-        .pipe(plugins.sourcemaps.write('.'))
-        .pipe(gulp.dest(path.resolve(paths().builds.js.dist)));
-    }))
+    .pipe(plugins.plumber())
+    .pipe(plugins.concat('scripts.min.js'))
+    .pipe(plugins.uglify())
+    .pipe(plugins.sourcemaps.init())
+    .pipe(plugins.sourcemaps.write('.'))
+    .pipe(gulp.dest(path.resolve(paths().builds.js.dist)))
     .pipe(plugins.notify({ message: 'JS: scripts built', onLast: true }));
 });
 
