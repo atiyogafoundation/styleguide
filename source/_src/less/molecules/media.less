@@ -1,7 +1,24 @@
 .media {
   .set-light-color() {
-    &__body {
+    .media__body {
       background-color: #f6f6f6;
+    }
+  }
+
+  .set-dark-color() {
+    .media__body {
+      background-color: @gray-darker;
+      color: #fff;
+
+      h1,
+      h2,
+      h3 {
+        color: #fff;
+      }
+
+      .button-icon {
+        .button-icon.set-light-color();
+      }
     }
   }
 
@@ -54,6 +71,14 @@
       margin-top: floor(@line-height-computed * 1.2);
       margin-bottom: 0;
     }
+  }
+
+  &--dark {
+    .set-dark-color();
+  }
+
+  &--small {
+
   }
 
   @media (min-width: @screen-md-min) {
