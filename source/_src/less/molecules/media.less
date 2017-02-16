@@ -28,23 +28,26 @@
   margin-bottom: @line-height-computed;
 
   &__header {
+    position: relative;
     overflow: hidden;
+    height: 0;
+    padding-bottom: 80%;
   }
 
   &__image {
-    position: relative;
-    height: 0;
-    overflow: hidden;
+    .square(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-bottom: 80%;
   }
 
   &__body {
     position: relative;
-    padding: 40px 20px;
+    padding: 35px 20px;
 
     h1,
     h2,
@@ -68,7 +71,7 @@
     }
 
     > * + * {
-      margin-top: floor(@line-height-computed * 1.2);
+      margin-top: floor(@line-height-computed-mobile * 1.2);
       margin-bottom: 0;
     }
   }
@@ -78,13 +81,31 @@
   }
 
   &--small {
+    font-size: (@font-size-small-mobile + 1px);
 
+    .media__header {
+      padding-bottom: 65%;
+    }
+
+    .media__body {
+      padding: 25px 20px;
+
+      h1,
+      h2,
+      h3 {
+        font-size: @font-size-base-mobile;
+      }
+
+      > * + * {
+        margin-top: floor(@line-height-computed / 1.6);
+      }
+    }
   }
 
   @media (min-width: @screen-md-min) {
-    &__image {
+    &__header {
       .make-md-column(4.55);
-      position: absolute;
+      position: absolute !important;
       left: 0;
       top: 0;
       padding-bottom: calc((100% * 4.55 / @grid-columns)~"- 60px");
@@ -100,7 +121,41 @@
       h1,
       h2,
       h3 {
-        font-size: @font-size-h1;
+        font-size: @font-size-h2;
+      }
+
+      > * + * {
+        margin-top: floor(@line-height-computed * 1.2);
+      }
+    }
+
+    &--small {
+      font-size: @font-size-small;
+
+      .media__header {
+        .make-md-column(3.45);
+        padding-bottom: calc((100% * (3.45 / 1.5) / @grid-columns)~"- 25px");
+      }
+
+      .media__body {
+        .make-md-column(9);
+        .make-md-column-offset(3);
+        padding: 34px 50px;
+        margin-top: 25px;
+
+        h1,
+        h2,
+        h3 {
+          font-size: (@font-size-large + 2px);
+        }
+
+        .button-icon {
+          font-size: (@font-size-small - 1px);
+        }
+
+        > * + * {
+          margin-top: floor(@line-height-computed * 0.8);
+        }
       }
     }
   }
@@ -108,6 +163,12 @@
   @media (min-width: @screen-lg-min) {
     &__body {
       padding: 94px 60px;
+
+      h1,
+      h2,
+      h3 {
+        font-size: @font-size-h1;
+      }
     }
   }
 }
