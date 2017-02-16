@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  {{#media}}
+  <div class="media {{ styleModifier }}">
+    <div class="media__header">
+      <a href="{{ href }}" class="media__image" style="background-image: url({{ image }})"></a>
+    </div>
+    <div class="media__body">
+      {{{ body }}}
+      <p>{{> atoms-button-icon }}</p>
+    </div>
+  </div>
+  {{/media}}
+</div>

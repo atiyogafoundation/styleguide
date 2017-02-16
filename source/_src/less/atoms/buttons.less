@@ -34,7 +34,7 @@
   font-family: @font-family-secondary;
   font-weight: 700;
   white-space: nowrap;
-  font-size: @font-size-small;
+  font-size: @font-size-small-mobile;
   transition: color .2s ease;
 
   .icon-circle::before {
@@ -48,6 +48,10 @@
     transition: all .3s ease;
     opacity: 0;
     transform: scale(0);
+  }
+
+  @media (min-width: @screen-sm-min) {
+    font-size: @font-size-small;
   }
 }
 

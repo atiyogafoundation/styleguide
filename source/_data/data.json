@@ -61,5 +61,15 @@
       "icon": "plus",
       "text": "Read More"
     }
+  },
+  "media": {
+    "href": "#",
+    "image": "https://unsplash.it/490/480/?image=21",
+    "body": "<h2><a href=\"#\">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia commodi sequi <a href=\"#\">libero explicabo consequuntur</a> ad, delectus optio magnam, facere molestias perspiciatis, pariatur eveniet? Modi expedita nisi sit, placeat voluptatem natus.</p>",
+    "button-icon": {
+      "href": "#",
+      "icon": "link",
+      "text": "Read More"
+    }
   }
 }
