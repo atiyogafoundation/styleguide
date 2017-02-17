@@ -1,0 +1,19 @@
+.card-list {
+  @gutter: floor(@grid-gutter-width / 1.5);
+  .make-row(@gutter);
+
+  > *[class^="col-"] {
+    padding-left: floor(@gutter / 2);
+    padding-right: floor(@gutter / 2);
+  }
+
+  .card {
+    margin-bottom: floor(@grid-gutter-width / 2);
+  }
+
+  @media (min-width: @screen-sm-min) {
+    .card {
+      margin-bottom: @gutter;
+    }
+  }
+}

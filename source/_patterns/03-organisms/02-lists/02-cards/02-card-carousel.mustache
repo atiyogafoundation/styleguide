@@ -1,0 +1,38 @@
+{{#card-carousel }}
+<div class="card-carousel">
+  <div class="carousel">
+    <div class="carousel__header">
+      <div class="col-sm-8">
+        <h2>{{ title }}</h2>
+      </div>
+      <div class="col-sm-4">
+        <div class="carousel__nav">
+          {{#prev }}
+            {{> atoms-button-icon:carousel__prev}}
+          {{/prev }}
+
+          <span class="carousel__fraction"></span>
+
+          {{#next }}
+            {{> atoms-button-icon:carousel__next}}
+          {{/next }}
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel__slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {{#items}}
+            <div class="swiper-slide">
+              {{> molecules-card }}
+            </div>
+          {{/items}}
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel__pagination"></div>
+  </div>
+</div>
+{{/card-carousel }}
