@@ -46,7 +46,8 @@
         "dist" : "source/js",
         "vendors" : {
           "top" : [
-            "bower_components/picturefill/dist/picturefill.min.js"
+            "bower_components/picturefill/dist/picturefill.min.js",
+            "bower_components/device.js/lib/device.min.js"
           ],
           "bottom" : [
             "bower_components/jquery/dist/jquery.min.js",
