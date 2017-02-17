@@ -1,0 +1,48 @@
+<div class="container-fluid">
+{{#carousel }}
+<div class="carousel">
+  <div class="carousel__header">
+    <div class="col-sm-8">
+      <h2>{{ title }}</h2>
+    </div>
+    <div class="col-sm-4">
+      <div class="carousel__nav">
+        {{#prev }}
+          {{> atoms-button-icon:carousel__prev}}
+        {{/prev }}
+
+        <span class="carousel__fraction"></span>
+
+        {{#next }}
+          {{> atoms-button-icon:carousel__next}}
+        {{/next }}
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel__slider">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="http://placehold.it/1280x800" alt="" width="100%">
+        </div>
+        <div class="swiper-slide">
+          <img src="http://placehold.it/1280x800" alt="" width="100%">
+        </div>
+        <div class="swiper-slide">
+          <img src="http://placehold.it/1280x800" alt="" width="100%">
+        </div>
+        <div class="swiper-slide">
+          <img src="http://placehold.it/1280x800" alt="" width="100%">
+        </div>
+        <div class="swiper-slide">
+          <img src="http://placehold.it/1280x800" alt="" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel__pagination"></div>
+</div>
+{{/carousel }}
+</div>
