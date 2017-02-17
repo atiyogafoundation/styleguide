@@ -40,8 +40,8 @@
         nextButton: $(this).find('.carousel__next'),
         prevButton: $(this).find('.carousel__prev'),
         onInit: function() {
-          if ($current.find('.swiper__slide').length === 1) {
-            $$current
+          if ($current.find('.swiper-slide').length === 1) {
+            $current
               .find('.carousel__pagination, .carousel__nav')
               .remove();
           }
