@@ -72,5 +72,19 @@
       "text": "Read More"
     }
   },
-  "media-list":[[],[],[],[]]
+  "media-list":[[],[],[],[]],
+  "card": {
+    "href": "#",
+    "image": "http://placehold.it/630x400",
+    "tags": [
+      { "href": "#", "text": "yoga" },
+      { "href": "#", "text": "lorem ipsum" },
+      { "href": "#", "text": "yoga" },
+      { "href": "#", "text": "lorem ipsum" },
+      { "href": "#", "text": "yoga" },
+      { "href": "#", "text": "lorem ipsum" }
+    ],
+    "body": "<h3><a href=\"#\">Lorem ipsum west Lorem ipsum west</a></h3><p>Lorem ipsum west Lorem ipsum west Lorem ipsum west Lorem ipsum west</p>",
+    "footer": "<h3>Lorem ipsum west Lorem ipsum west</h3><p>from FRIDAY 07 SEPTEMBER 2016 <br>to TUESDAY 11 SEPTEMBER 2016</p>"
+  }
 }
