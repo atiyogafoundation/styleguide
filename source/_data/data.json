@@ -143,5 +143,23 @@
     "image": "http://placehold.it/300x445",
     "name": "Lorem ipsum dolor sit amet",
     "price": "12.99 €"
+  },
+  "product-carousel": {
+    "title": "Lorem ipsum asi amet",
+    "next": {
+      "button-icon": {
+        "href": "#",
+        "icon": "arrow-right8",
+        "text": ""
+      }
+    },
+    "prev": {
+      "button-icon": {
+        "href": "#",
+        "icon": "arrow-left8",
+        "text": ""
+      }
+    },
+    "items": [[],[],[],[],[],[],[],[],[],[],[],[]]
   }
 }
