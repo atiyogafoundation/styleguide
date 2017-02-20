@@ -137,5 +137,11 @@
   "jumbotron": {
     "title": "Lorem ipsum dolor sit amet",
     "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet hic placeat enim voluptates voluptas, cumque eaque minus neque culpa. Provident fugiat officia reiciendis possimus, aspernatur rem eum inventore veniam culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perferendis cum nemo corporis rem aliquid. Iste impedit deleniti in, laborum eaque numquam aperiam accusantium consequuntur at reprehenderit! Rem, reiciendis, blanditiis?"
+  },
+  "product": {
+    "href": "#",
+    "image": "http://placehold.it/300x445",
+    "name": "Lorem ipsum dolor sit amet",
+    "price": "12.99 €"
   }
 }

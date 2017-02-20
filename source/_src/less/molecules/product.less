@@ -1,0 +1,28 @@
+.product {
+  display: block;
+  text-decoration: none !important;
+  font-size: @font-size-small;
+
+  span {
+    display: block;
+  }
+
+  > * + * {
+    margin-top: floor(@line-height-computed / 2.6);
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-family: @font-family-secondary;
+    color: @gray-darker;
+  }
+
+  &__price {
+    font-family: @font-family-primary;
+    color: @text-color;
+  }
+}
