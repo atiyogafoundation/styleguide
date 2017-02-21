@@ -5,6 +5,48 @@
     "short": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
     "tiny": "Lorem ipsum dolor"
   },
+  "input": {
+    "type": "text",
+    "placeholder": "Name",
+    "name": "name",
+    "required": true,
+    "value": ""
+  },
+  "select": {
+    "placeholder": "Select your job",
+    "required": true,
+    "name": "job",
+    "options": [{
+      "value": "1",
+      "text": "Frontend Dev"
+    }, {
+      "value": "2",
+      "text": "Backend Dev"
+    }, {
+      "value": "3",
+      "text": "UX Designer"
+    }, {
+      "value": "4",
+      "text": "SEO Specialist"
+    }]
+  },
+  "checkbox": {
+    "required": true,
+    "name": "privacy",
+    "checked": false,
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus beatae ad saepe sapiente minus odit excepturi veritatis quam quae modi sed perferendis nostrum pariatur, dolorem accusantium, illo iste qui blanditiis."
+  },
+  "radio": {
+    "required": true,
+    "name": "privacy",
+    "checked": false,
+    "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus beatae ad saepe sapiente minus odit excepturi veritatis quam quae modi sed perferendis nostrum pariatur, dolorem accusantium, illo iste qui blanditiis."
+  },
+  "textarea": {
+    "placeholder": "Message",
+    "name": "message",
+    "required": true
+  },
   "images": {
     "fullscreen": "http://placehold.it/1920x1080",
     "16x9": "http://placehold.it/1280x720",

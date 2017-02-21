@@ -1,0 +1,31 @@
+.form-control {
+  position: relative;
+  font-family: @font-family-secondary;
+  font-size: @font-size-small;
+  font-weight: 800;
+
+  select {
+    .square(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 0;
+
+    option {
+      color: @text-color;
+    }
+  }
+
+  textarea& {
+    height: 150px;
+  }
+}
+
+.checkbox label,
+.radio label {
+  font-family: @font-family-secondary;
+  font-size: @font-size-small;
+  font-weight: 800;
+  color: @text-color;
+}

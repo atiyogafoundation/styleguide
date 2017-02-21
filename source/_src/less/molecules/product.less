@@ -1,7 +1,8 @@
 .product {
-  display: block;
+  position: relative;
   text-decoration: none !important;
   font-size: @font-size-small;
+  display: block;
 
   span {
     display: block;
@@ -25,5 +26,13 @@
   &__price {
     font-family: @font-family-primary;
     color: @text-color;
+  }
+
+  &:hover,
+  &:focus {
+    &__title,
+    &__price {
+      color: @brand-primary;
+    }
   }
 }

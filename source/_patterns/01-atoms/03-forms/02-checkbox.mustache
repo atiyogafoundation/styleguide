@@ -1,0 +1,7 @@
+<div class="checkbox">
+  <label>
+    <input type="checkbox" name="{{ checkbox.name }}" {{#checkbox.required}} required {{/checkbox.required}} {{#checkbox.checked}} checked {{/checkbox.checked}}>
+    {{{ checkbox.text }}}
+    {{#checkbox.required}} *{{/checkbox.required}}
+  </label>
+</div>

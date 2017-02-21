@@ -1,0 +1,8 @@
+<div class="form-control">
+  <select name="{{ select.name }}" {{#select.required}} required{{/select.required}}>
+    <option disabled selected>{{ select.placeholder }}{{#select.required}} *{{/select.required}}</option>
+    {{#select.options}}
+      <option value="{{ value }}">{{ text }}</option>
+    {{/select.options}}
+  </select>
+</div>

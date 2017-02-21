@@ -2,17 +2,19 @@
   var $cardsCarousel = $('.card-carousel');
 
   $cardsCarousel.each(function() {
-    $(this)
+    var $current = $(this)
+
+    $current
       .find('.swiper-container')
       .swiper({
         spaceBetween: 20,
         speed: 800,
         simulateTouch: false,
-        pagination: (device.mobile() && !device.tablet()) ? $(this).find('.carousel__pagination') : $(this).find('.carousel__fraction'),
+        pagination: (device.mobile() && !device.tablet()) ? $current.find('.carousel__pagination') : $current.find('.carousel__fraction'),
         paginationType: (device.mobile() && !device.tablet()) ? "bullets" : "fraction",
         paginationHide: false,
-        nextButton: $(this).find('.carousel__next'),
-        prevButton: $(this).find('.carousel__prev'),
+        nextButton: $current.find('.carousel__next'),
+        prevButton: $current.find('.carousel__prev'),
         onInit: function() {
           if ($current.find('.swiper-slide').length === 1) {
             $current
@@ -64,30 +66,5 @@
         }
       });
   });
-
-  // var $carousels = $('.carousel');
-
-  // $carousels.each(function() {
-  //   var $current = $(this);
-
-  //   $current
-  //     .find('.swiper-container')
-  //     .swiper({
-  //       speed: 800,
-  //       simulateTouch: false,
-  //       pagination: (device.mobile() && !device.tablet()) ? $(this).find('.carousel__pagination') : $(this).find('.carousel__fraction'),
-  //       paginationType: (device.mobile() && !device.tablet()) ? "bullets" : "fraction",
-  //       paginationHide: false,
-  //       nextButton: $(this).find('.carousel__next'),
-  //       prevButton: $(this).find('.carousel__prev'),
-  //       onInit: function() {
-  //         if ($current.find('.swiper-slide').length === 1) {
-  //           $current
-  //             .find('.carousel__pagination, .carousel__nav')
-  //             .remove();
-  //         }
-  //       }
-  //     });
-  // });
 
 })(jQuery, device, Swiper);

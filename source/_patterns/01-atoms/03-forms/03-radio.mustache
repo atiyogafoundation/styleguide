@@ -1,0 +1,6 @@
+<div class="radio">
+  <label>
+    <input type="radio" name="{{ radio.name }}" {{#radio.required}} required {{/radio.required}} {{#radio.checked}} checked {{/radio.checked}}>
+    {{{ radio.text }}}
+    {{#radio.required}} *{{/radio.required}}
+</div>
