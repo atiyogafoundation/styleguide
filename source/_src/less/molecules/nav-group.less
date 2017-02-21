@@ -1,17 +1,23 @@
 .nav-group {
   font-family: @font-family-secondary;
   font-size: @font-size-small-mobile;
-  font-weight: 800;
 
   a {
     color: @gray-dark;
     text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &.active {
+      color: @brand-primary;
+    }
   }
 
   &__head {
     text-transform: uppercase;
     padding-bottom: floor(@line-height-computed-mobile / 2.1);
     display: block;
+    font-weight: 800;
 
     &:hover,
     &:focus {
@@ -38,17 +44,48 @@
       margin: 0;
     }
 
-    a {
+    > li > a {
       padding: floor(@line-height-computed-mobile / 2);
       border-bottom: 1px solid #e6e6e6;
       display: block;
       transition: all .2s ease;
+      font-weight: 800;
 
       &:hover,
       &:focus,
       &.active {
         background-color: #f6f6f6;
+      }
+    }
+
+    > li ul {
+      list-style-type: none;
+      padding-top: floor(@line-height-computed-mobile / 3);
+      padding-bottom: floor(@line-height-computed-mobile / 2);
+      margin-left: floor(-@line-height-computed-mobile / 2);
+      display: none;
+
+      li {
+        padding: 3px 0;
+      }
+    }
+
+    > li.active {
+      background-color: #f6f6f6;
+
+      > a {
+        border-bottom: 0;
+        padding-bottom: 0;
         color: @brand-primary;
+      }
+
+      > ul {
+        border-bottom: 1px solid #e6e6e6;
+        display: block;
+
+        > li.active a  {
+          color: @brand-primary;
+        }
       }
     }
   }
@@ -60,8 +97,17 @@
       padding-bottom: floor(@line-height-computed / 2.1);
     }
 
-    &__list a {
-      padding: floor(@line-height-computed / 2);
+    &__list > li {
+      > a {
+        padding: floor(@line-height-computed / 2);
+      }
+
+      ul {
+        padding-top: floor(@line-height-computed / 3);
+        padding-bottom: floor(@line-height-computed / 2);
+        margin-left: floor(-@line-height-computed / 2);
+      }
     }
+
   }
 }
