@@ -47,6 +47,11 @@
     "name": "message",
     "required": true
   },
+  "button": {
+    "href": "#",
+    "text": "Lorem Ipsum",
+    "is_anchor": true
+  },
   "images": {
     "fullscreen": "http://placehold.it/1920x1080",
     "16x9": "http://placehold.it/1280x720",

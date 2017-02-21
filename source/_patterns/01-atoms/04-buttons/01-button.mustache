@@ -1,1 +1,8 @@
-<a href="#" class="button">Button</a>
+{{#button.is_anchor}}
+  <a href="{{ button.href }}" class="button {{ styleModifier }}">{{ button.text }}</a>
+{{/button.is_anchor}}
+
+{{^button.is_anchor}}
+  <button class="button {{ styleModifier }}">{{ button.text }}</button>
+{{/button.is_anchor}}
+
