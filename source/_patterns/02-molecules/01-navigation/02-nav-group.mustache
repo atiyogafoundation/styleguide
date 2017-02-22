@@ -3,7 +3,16 @@
   <a href="{{ head.href }}" class="nav-group__head">{{ head.text }}</a>
   <ul class="nav-group__list">
     {{#list}}
-      <li><a href="{{ href }}">{{ text }}</a></li>
+      <li {{#has_children}}class="active"{{/has_children}}>
+        <a href="{{ href }}">{{ text }}</a>
+        {{#has_children}}
+          <ul>
+            {{#children}}
+              <li><a href="{{ href }}">{{ text }}</a></li>
+            {{/children}}
+          </ul>
+        {{/has_children}}
+      </li>
     {{/list}}
   </ul>
 </div>

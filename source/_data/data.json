@@ -99,7 +99,17 @@
       "text": "Lorem ipsum dolor"
     },
     "list": [
-      { "href": "#", "text": "Lorem" },
+      {
+        "href": "#",
+        "text": "Lorem",
+        "has_children": true,
+        "children": [
+          { "href": "#", "text": "Ipsum" },
+          { "href": "#", "text": "Dolor" },
+          { "href": "#", "text": "Consectetur" },
+          { "href": "#", "text": "Adipisicing" }
+        ]
+      },
       { "href": "#", "text": "Ipsum" },
       { "href": "#", "text": "Dolor" },
       { "href": "#", "text": "Consectetur" },
