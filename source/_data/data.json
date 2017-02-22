@@ -56,7 +56,12 @@
     "fullscreen": "http://placehold.it/1920x1080",
     "16x9": "http://placehold.it/1280x720",
     "4x3": "http://placehold.it/1024x768",
-    "square": "http://placehold.it/800x800"
+    "square": "http://placehold.it/800x800",
+    "1920": "http://placehold.it/1920x1080",
+    "1280": "http://placehold.it/1280x720",
+    "1024": "http://placehold.it/1024x576",
+    "720": "http://placehold.it/720x405",
+    "640": "http://placehold.it/640x360"
   },
   "bgs": {
     "1280": "http://placehold.it/1280x720",
@@ -101,7 +106,7 @@
       { "href": "#", "text": "Adipisicing" }
     ]
   },
-  "aside-text": {
+  "panel": {
     "body": "<h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia commodi sequi <a href=\"#\">libero explicabo consequuntur</a> ad, delectus optio magnam, facere molestias perspiciatis, pariatur eveniet? Modi expedita nisi sit, placeat voluptatem natus.</p>",
     "button-link": {
       "href": "#",

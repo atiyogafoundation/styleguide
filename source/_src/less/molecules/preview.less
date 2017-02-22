@@ -1,6 +1,6 @@
 .preview {
-  position: relative;
   color: @text-color;
+  margin-bottom: floor(@line-height-computed-mobile * 2);
 
   &__cta {
     display: block;
@@ -64,9 +64,10 @@
   }
 
   &__anchor {
-    display: block;
+    position: relative;
     text-decoration: none !important;
     color: inherit;
+    display: block;
 
     &:hover,
     &:focus {
@@ -91,6 +92,8 @@
   }
 
   @media (min-width: @screen-md-min) {
+    margin-bottom: floor(@line-height-computed * 2);
+
     &__image-wrapper .preview__cta {
       display: none;
     }

@@ -26,10 +26,7 @@
           480:  { slidesPerView: 1 },
           790:  { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
-          1920: {
-            slidesPerView: 4,
-            slidesPerGroup: 2
-          }
+          1920: { slidesPerView: 3 }
         }
       });
   });
