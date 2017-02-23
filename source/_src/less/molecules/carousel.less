@@ -4,6 +4,12 @@
 
   &__header {
     .make-row();
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+    }
   }
 
   &__nav {
@@ -13,7 +19,6 @@
     float: right;
     display: inline-block;
     color: @gray-darker;
-    margin-top: 24px;
     display: none;
 
     > * {
@@ -33,7 +38,6 @@
       }
     }
   }
-
 
   &__fraction {
     display: inline-block;
@@ -64,6 +68,10 @@
 
     &__nav {
       display: block;
+    }
+
+    &__pagination {
+      display: none;
     }
   }
 }
