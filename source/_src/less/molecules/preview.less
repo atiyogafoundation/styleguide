@@ -100,7 +100,7 @@
 
     &__title {
       position: absolute;
-      left: -116px;
+      left: -80px;
       top: 50%;
       margin: 0;
       z-index: 1;
@@ -119,6 +119,12 @@
 
     &__description {
       position: absolute;
+    }
+  }
+
+  @media (min-width: @screen-lg-min) {
+    &__title {
+      left: -116px;
     }
   }
 }

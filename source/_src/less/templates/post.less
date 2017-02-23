@@ -3,10 +3,11 @@
 
   &__header {
     font-size: @font-size-large-mobile;
+    margin-bottom: @section-margin-mobile;
 
     &__inner {
       .container-fluid();
-      // padding-top: 20px;
+      padding-top: floor(@section-margin-mobile / 4);
 
       > * {
         margin-top: 0;
@@ -24,6 +25,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    display: none;
 
     &__wrapper {
       .container-fluid();
@@ -35,12 +37,19 @@
     margin-top: 0;
   }
 
+  @media (max-width: @screen-xs-max) {
+    &__header__inner {
+      padding-left: @grid-gutter-width;
+      padding-right: @grid-gutter-width;
+    }
+  }
+
   @media (min-width: @screen-md-min) {
-    margin-top: 180px;
+    margin-top: (@section-margin * 2);
 
     &__header {
       font-size: @font-size-large;
-      margin-bottom: 90px;
+      margin-bottom: @section-margin;
 
       &__wrapper {
         .container-fluid();
@@ -60,6 +69,8 @@
     }
 
     &__aside {
+      display: block;
+
       &__inner {
         .make-md-column(3);
         position: absolute;
@@ -86,10 +97,6 @@
     h2,
     h3 {
       display: none;
-    }
-
-    &__inner {
-      padding-top: 20px;
     }
   }
 

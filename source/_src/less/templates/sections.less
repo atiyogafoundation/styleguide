@@ -1,5 +1,6 @@
 .section {
   position: relative;
+  margin-top: @section-margin-mobile;
 
   &--default {
     .container();
@@ -9,19 +10,30 @@
     .container-fluid();
   }
 
+  &--aside {
+    .container-fluid();
+    z-index: 1;
+  }
+
   &--light {
     background-color: #f6f6f6;
+    padding-top: (@section-margin-mobile - 10px);
+    padding-bottom: (@section-margin-mobile + 10px);
+
+    + .section--light {
+      margin-top: -@section-margin-mobile;
+    }
   }
 
   @media (min-width: @screen-md-min) {
-    margin-top: 90px;
+    margin-top: @section-margin;
 
     &--light {
-      padding-top: 80px;
-      padding-bottom: 100px;
+      padding-top: (@section-margin - 10px);
+      padding-bottom: (@section-margin + 10px);
 
       + .section--light {
-        margin-top: -90px;
+        margin-top: -@section-margin;
       }
     }
 
@@ -32,36 +44,36 @@
       float: none !important;
     }
 
-    &.section--aside {
-      .container-fluid();
-      z-index: 1;
-
-      .section__wrapper {
-        .make-md-column(3);
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
+    &.section--aside .section__wrapper {
+      .make-md-column(3);
+      position: absolute;
+      top: 0;
+      left: 0;
     }
-  }
-}
-
-.section[data-type="header"],
-header.section {
-  .container-fluid();
-  font-size: @font-size-large-mobile;
-
-  @media (min-width: @screen-md-min) {
-    font-size: @font-size-large;
   }
 }
 
 .section[data-type="text"] {
   .container-fluid();
 
-  .section__wrapper > * {
-    margin-top: 0;
-    margin-bottom: 0;
+  .section__wrapper {
+    > * {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      + * {
+        margin-top: @line-height-computed-mobile;
+      }
+    }
+
+    blockquote {
+      margin-top: @section-margin-mobile;
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    padding-left: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
   }
 
   @media (min-width: @screen-md-min) {
@@ -75,12 +87,12 @@ header.section {
       }
 
       blockquote {
-        margin-top: 80px;
+        margin-top: (@section-margin - 10px);
       }
     }
 
     + .section[data-type="media"] .media-list--small {
-      margin-top: -45px;
+      margin-top: -@section-margin;
     }
   }
 }
