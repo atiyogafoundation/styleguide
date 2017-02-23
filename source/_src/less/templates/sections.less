@@ -37,6 +37,10 @@
       }
     }
 
+    &--aside + .section:not(.section--aside) {
+      margin-top: 0 !important;
+    }
+
     &.section--offset .section__wrapper {
       .make-md-column(6);
       .make-md-column-offset(4);
