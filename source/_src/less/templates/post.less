@@ -6,7 +6,7 @@
 
     &__inner {
       .container-fluid();
-      padding-top: 20px;
+      // padding-top: 20px;
 
       > * {
         margin-top: 0;
@@ -36,6 +36,8 @@
   }
 
   @media (min-width: @screen-md-min) {
+    margin-top: 180px;
+
     &__header {
       font-size: @font-size-large;
       margin-bottom: 90px;
@@ -48,7 +50,6 @@
       &__inner {
         .make-md-column(6);
         .make-md-column-offset(4);
-        padding-top: 26px;
         position: static !important;
         float: none !important;
 
@@ -71,6 +72,8 @@
 }
 
 .page-header + .post {
+  margin-top: 0;
+
   .post__aside {
     position: relative;
     top: auto;
@@ -78,10 +81,16 @@
     width: auto;
   }
 
-  .post__header h1,
-  .post__header h2,
-  .post__header h3 {
-    display: none;
+  .post__header {
+    h1,
+    h2,
+    h3 {
+      display: none;
+    }
+
+    &__inner {
+      padding-top: 20px;
+    }
   }
 
   @media (min-width: @screen-md-min) {
@@ -104,6 +113,10 @@
           content: '';
           z-index: -1;
         }
+      }
+
+      &__inner {
+        padding-top: 26px;
       }
     }
   }
