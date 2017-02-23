@@ -78,4 +78,35 @@ ul {
       margin-bottom: 0;
     }
   }
+
+  &.has-icon-pointer {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+
+    li {
+      position: relative;
+      padding-left: (@font-size-base-mobile + 10px);
+
+      .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: floor(@font-size-base-mobile / 3.5);
+        color: @gray-darker;
+      }
+    }
+  }
+
+  @media (min-width: @screen-sm-min) {
+    &.has-icon-pointer {
+      li {
+        padding-left: (@font-size-base + 10px);
+
+        .icon {
+          margin-top: floor(@font-size-base / 2.5);
+        }
+      }
+    }
+  }
 }
