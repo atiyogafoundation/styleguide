@@ -6,6 +6,8 @@
   margin: 0;
   border: 0;
   overflow: hidden;
+  background-color: @brand-primary;
+  color: #fff;
 
   &__image {
     .square(100%);
@@ -15,12 +17,30 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    &:before {
+      .square(100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      display: block;
+      background-color: fade(@gray-darker, 60%);
+    }
   }
 
   &__body {
+    .container-fluid();
     position: relative;
     z-index: 1;
-    padding: 90px 0;
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    h1,
+    h2,
+    h3 {
+      color: #fff;
+    }
   }
 
   @media (min-width: @screen-sm-min) {
@@ -31,7 +51,12 @@
       position: relative;
       display: table-cell;
       vertical-align: middle;
-      padding: 0;
+    }
+  }
+
+  @media (min-width: @screen-md-min) {
+    &__body {
+      top: floor(-110px / 2);
     }
   }
 
