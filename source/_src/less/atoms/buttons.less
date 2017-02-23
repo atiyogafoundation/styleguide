@@ -115,3 +115,32 @@
     color: @brand-primary;
   }
 }
+
+.button-cta {
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  background-color: @brand-primary;
+  display: block;
+  font-family: @font-family-secondary;
+  font-weight: 800;
+  font-size: @font-size-small;
+  padding: 24px 28px;
+  transition: background-color .2s ease;
+
+  .icon-circle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 28px;
+    transform: translateY(-50%);
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: darken(@brand-primary, 10%);
+  }
+}
