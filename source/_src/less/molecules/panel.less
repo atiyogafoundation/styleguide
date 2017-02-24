@@ -18,6 +18,22 @@
     margin-bottom: 0;
   }
 
+  &--dark {
+    background-color: @gray-darker;
+    color: #fff;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #fff;
+    }
+
+    .button-link {
+      .button-link.set-color(#fff);
+    }
+  }
+
   @media (min-width: @screen-sm-min) {
     padding: 30px;
   }

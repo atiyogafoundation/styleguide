@@ -223,5 +223,12 @@
       }
     },
     "items": [[],[],[],[],[],[],[],[],[],[],[],[]]
+  },
+  "contacts-map": {
+    "lat": "42.8835922",
+    "lng": "11.3217915",
+    "url": "https://goo.gl/maps/iM9J8FV6Y8r",
+    "zoom": "9",
+    "marker-icon": "../../img/map-marker.svg"
   }
 }
