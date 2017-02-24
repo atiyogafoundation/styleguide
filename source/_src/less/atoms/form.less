@@ -31,23 +31,29 @@
 }
 
 .form {
+  margin-bottom: @line-height-computed-mobile;
+
   .row {
-    margin-left: floor(-@grid-gutter-width / 3.8);
-    margin-right: floor(-@grid-gutter-width / 3.8);
+    margin-left: floor(-@grid-gutter-width / 3.2);
+    margin-right: floor(-@grid-gutter-width / 3.2);
 
     *[class^="col-"] {
-      padding-left: floor(@grid-gutter-width / 3.8);
-      padding-right: floor(@grid-gutter-width / 3.8);
+      padding-left: floor(@grid-gutter-width / 3.2);
+      padding-right: floor(@grid-gutter-width / 3.2);
     }
   }
 
   .form-group {
-    margin-bottom: floor(@grid-gutter-width / 1.9);
+    margin-bottom: floor(@grid-gutter-width / 1.6);
 
     .checkbox,
     .radio {
       margin-top: 0;
       margin-bottom: 0;
     }
+  }
+
+  @media (min-width: @screen-sm-min) {
+    margin-bottom: @line-height-computed;
   }
 }
