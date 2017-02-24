@@ -17,24 +17,15 @@
     <div class="post__aside__wrapper">
       <div class="post__aside__inner">
         {{>molecules-nav-group}}
+        {{>atoms-button-cta}}
+        {{>molecules-panel}}
+        {{>molecules-panel:panel--dark}}
       </div>
     </div>
   </aside>
 
   <article class="post__body">
-    {{>organisms-section-text:section--offset}}
-    {{>organisms-section-preview:section--offset}}
-    {{>organisms-section-panel:section--aside}}
-    {{>organisms-section-text:section--offset}}
-    {{>organisms-section-image:section--full}}
-    {{>organisms-section-text:section--offset}}
-    {{>organisms-section-media:section--fluid(is_default_dark:true)}}
-    {{>organisms-section-text:section--offset}}
-    {{>organisms-section-card-carousel:section--full section--light}}
-    {{>organisms-section-text:section--offset}}
-    {{>organisms-section-media:section--fluid(is_small_dark:true)}}
-    {{>organisms-section-product-carousel:section--full section--light}}
-    {{>organisms-section-map:section--full}}
+    {{>organisms-section-media:section--offset(is_small:true)}}
   </article>
 </div>
 

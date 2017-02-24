@@ -1,0 +1,17 @@
+{
+  "section-preview": {
+    "preview": {
+      "href": "#",
+      "image": {
+        "1024": "http://placehold.it/1024x576",
+        "720": "http://placehold.it/720x405",
+        "640": "http://placehold.it/640x360"
+      },
+      "title": "Tibetan Culture Week Arcidosso, Italy",
+      "button-icon": {
+        "icon": "camera",
+        "text": "Open Gallery"
+      }
+    }
+  }
+}

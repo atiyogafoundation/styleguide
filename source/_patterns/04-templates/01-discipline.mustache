@@ -1,0 +1,40 @@
+{{>organisms-header}}
+
+{{>molecules-page-header }}
+
+<div class="post">
+  <header class="post__header">
+    <div class="post__header__wrapper">
+      <div class="post__header__inner">
+        {{>molecules-breadcrumb}}
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse posuere neque et eros cursus varius. Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p>
+      </div>
+    </div>
+  </header>
+
+  <aside class="post__aside">
+    <div class="post__aside__wrapper">
+      <div class="post__aside__inner">
+        {{>molecules-nav-group}}
+      </div>
+    </div>
+  </aside>
+
+  <article class="post__body">
+    {{>organisms-section-text:section--offset}}
+    {{>organisms-section-preview:section--offset}}
+    {{>organisms-section-panel:section--aside}}
+    {{>organisms-section-text:section--offset}}
+    {{>organisms-section-image:section--full}}
+    {{>organisms-section-text:section--offset}}
+    {{>organisms-section-media:section--fluid(is_default_dark:true)}}
+    {{>organisms-section-text:section--offset}}
+    {{>organisms-section-card-carousel:section--full section--light}}
+    {{>organisms-section-text:section--offset}}
+    {{>organisms-section-media:section--fluid(is_small_dark:true)}}
+    {{>organisms-section-product-carousel:section--full section--light}}
+  </article>
+</div>
+
+{{>organisms-footer}}
