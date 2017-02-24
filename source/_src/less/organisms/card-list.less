@@ -16,4 +16,27 @@
       margin-bottom: @gutter;
     }
   }
+
+  @supports (display: flex) {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    > *[class^="col-"] {
+      float: none !important;
+    }
+
+    .card {
+      height: calc(100% ~'- @{gutter}');
+      display: flex;
+      flex-direction: column;
+
+      &__footer {
+        position: relative;
+        align-items: flex-end;
+        margin-top: auto;
+      }
+    }
+  }
 }
