@@ -1,44 +1,51 @@
+{{#contact-form}}
 <form action="#" class="form" method="POST">
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        {{>atoms-input}}
+        {{#name}} {{>atoms-input}} {{/name}}
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
-        {{>atoms-input}}
+        {{#surname}} {{>atoms-input}} {{/surname}}
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
-        {{>atoms-input}}
+        {{#email}} {{>atoms-input}} {{/email}}
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
-        {{>atoms-input}}
+        {{#phone}} {{>atoms-input}} {{/phone}}
       </div>
     </div>
     <div class="col-md-12">
       <div class="form-group">
-        {{>atoms-select}}
+        {{#branch}} {{>atoms-select}} {{/branch}}
       </div>
     </div>
     <div class="col-md-12">
       <div class="form-group">
-        {{>atoms-input}}
+        {{#subject}} {{>atoms-input}} {{/subject}}
       </div>
     </div>
     <div class="col-md-12">
       <div class="form-group">
-        {{>atoms-textarea}}
+        {{#message}} {{>atoms-textarea}} {{/message}}
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        {{#privacy}} {{>atoms-checkbox}} {{/privacy}}
       </div>
     </div>
     <div class="col-md-12">
       <div class="form-group pull-right">
-        {{>atoms-button }}
+        {{#submit}} {{>atoms-button }} {{/submit}}
       </div>
     </div>
   </div>
 </form>
+{{/contact-form}}

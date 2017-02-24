@@ -232,5 +232,93 @@
     "marker-icon": "../../img/map-marker.svg"
   },
   "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ex animi minima quo voluptas consequatur ullam ipsum amet nobis, cum tenetur placeat labore magni odio distinctio rerum nemo iure maxime.",
-  "richtext": "<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere neque et eros cursus varius. Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p><h3>Lorem ipsum dolor sit</h3><p>Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p><h3>Nam pulvinar nibh pretium faucibus</h3><p>Suspendisse posuere neque et eros cursus varius. Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p><blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia et, optio quo quasi cupiditate dolorum, eveniet, nihil enim, ipsam officiis voluptate adipisci ex. Consequuntur dolorum facere commodi minus beatae, neque.</blockquote><h2>Lorem ipsum dolor</h2><ul><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li></ul>"
+  "richtext": "<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere neque et eros cursus varius. Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p><h3>Lorem ipsum dolor sit</h3><p>Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p><h3>Nam pulvinar nibh pretium faucibus</h3><p>Suspendisse posuere neque et eros cursus varius. Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p><blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia et, optio quo quasi cupiditate dolorum, eveniet, nihil enim, ipsam officiis voluptate adipisci ex. Consequuntur dolorum facere commodi minus beatae, neque.</blockquote><h2>Lorem ipsum dolor</h2><ul><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li></ul>",
+  "contact-form": {
+    "name": {
+      "input": {
+        "type": "text",
+        "placeholder": "Name",
+        "name": "name",
+        "required": true,
+        "value": ""
+      }
+    },
+    "surname": {
+      "input": {
+        "type": "text",
+        "placeholder": "Surname",
+        "name": "surname",
+        "required": true,
+        "value": ""
+      }
+    },
+    "email": {
+      "input": {
+        "type": "text",
+        "placeholder": "Email",
+        "name": "email",
+        "required": true,
+        "value": ""
+      }
+    },
+    "phone": {
+      "input": {
+        "type": "text",
+        "placeholder": "Phone",
+        "name": "phone",
+        "required": false,
+        "value": ""
+      }
+    },
+    "subject": {
+      "input": {
+        "type": "text",
+        "placeholder": "Message Subject",
+        "name": "subject",
+        "required": false,
+        "value": ""
+      }
+    },
+    "branch": {
+      "select": {
+        "placeholder": "Select Branch",
+        "required": false,
+        "name": "branch",
+        "options": [{
+          "value": "1",
+          "text": "Branch: Shang Shung Institute UK"
+        }, {
+          "value": "2",
+          "text": "Branch: Shang Shung Institute IT"
+        }, {
+          "value": "3",
+          "text": "Branch: Shang Shung Institute US"
+        }, {
+          "value": "4",
+          "text": "Branch: Shang Shung Institute JP"
+        }]
+      }
+    },
+    "privacy": {
+      "checkbox": {
+        "required": true,
+        "name": "privacy",
+        "checked": false,
+        "text": "Lorssem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus beatae ad saepe sapiente minus odit excepturi veritatis quam quae modi sed perferendis nostrum pariatur, dolorem accusantium, illo iste qui blanditiis."
+      }
+    },
+    "message": {
+      "textarea": {
+        "placeholder": "Enter your message",
+        "name": "message",
+        "required": true
+      }
+    },
+    "submit": {
+      "button": {
+        "is_anchor": false,
+        "text": "Send Message"
+      }
+    }
+  }
 }
