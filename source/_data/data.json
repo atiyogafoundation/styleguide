@@ -230,5 +230,48 @@
     "url": "https://goo.gl/maps/iM9J8FV6Y8r",
     "zoom": "9",
     "marker-icon": "../../img/map-marker.svg"
-  }
+  },
+  "section-text": {
+    "body": "<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere neque et eros cursus varius. Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p><h3>Lorem ipsum dolor sit</h3><p>Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p><h3>Nam pulvinar nibh pretium faucibus</h3><p>Suspendisse posuere neque et eros cursus varius. Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p><blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia et, optio quo quasi cupiditate dolorum, eveniet, nihil enim, ipsam officiis voluptate adipisci ex. Consequuntur dolorum facere commodi minus beatae, neque.</blockquote><h2>Lorem ipsum dolor</h2><ul><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li><li><a href=\"#\">Lorem</a></li></ul>"
+  },
+  "section-preview": {
+    "preview": {
+      "href": "#",
+      "image": {
+        "1024": "http://placehold.it/1024x576",
+        "720": "http://placehold.it/720x405",
+        "640": "http://placehold.it/640x360"
+      },
+      "title": "Tibetan Culture Week Arcidosso, Italy",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nobis voluptas officia delectus, laudantium dicta id mollitia, vero maiores consequatur odio alias! Illum repellat repudiandae sint facere natus. Tenetur, eos.",
+      "button-icon": {
+        "icon": "camera",
+        "text": "Open Gallery"
+      }
+    }
+  },
+  "section-panel": {
+    "panel": {
+      "body": "<h3>Lorem ipsum dolor sit amet</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia commodi sequi <a href=\"#\">libero explicabo consequuntur</a> ad, delectus optio magnam, facere molestias perspiciatis, pariatur eveniet? Modi expedita nisi sit, placeat voluptatem natus.</p>",
+      "button-link": {
+        "href": "#",
+        "icon": "plus",
+        "text": "Read More"
+      }
+    }
+  },
+  "section-image": {
+    "images": {
+      "1920": "http://placehold.it/1920x1080",
+      "1280": "http://placehold.it/1280x720",
+      "1024": "http://placehold.it/1024x576",
+      "720": "http://placehold.it/720x405",
+      "640": "http://placehold.it/640x360"
+    },
+    "caption": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur obcaecati, consequatur facere quaerat officiis at quisquam sint quibusdam aspernatur iusto accusamus, reiciendis ipsam recusandae sunt autem? Facere reprehenderit ratione cupiditate!"
+  },
+  "section-media": "empty",
+  "section-card-carousel": "empty",
+  "section-product-carousel": "empty",
+  "section-map": "empty"
 }
