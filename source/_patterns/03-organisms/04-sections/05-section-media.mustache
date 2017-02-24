@@ -1,21 +1,19 @@
 <section class="section {{ styleModifier }}" data-type="media">
   <div class="section__wrapper">
-    {{#section-media}}
-      {{#is_default}}
-        {{> organisms-media-list:media-list--default }}
-      {{/is_default}}
+    {{#is_default}}
+      {{> organisms-media-list:media-list--default }}
+    {{/is_default}}
 
-      {{#is_small}}
-        {{> organisms-media-list:media-list--small }}
-      {{/is_small}}
+    {{#is_small}}
+      {{> organisms-media-list:media-list--small }}
+    {{/is_small}}
 
-      {{#is_default_dark}}
-        {{> organisms-media-list:media-list--default media-list--dark }}
-      {{/is_default_dark}}
+    {{#is_default_dark}}
+      {{> organisms-media-list:media-list--default media-list--dark }}
+    {{/is_default_dark}}
 
-      {{#is_small_dark}}
-        {{> organisms-media-list:media-list--small media-list--dark }}
-      {{/is_small_dark}}
-    {{/section-media}}
+    {{#is_small_dark}}
+      {{> organisms-media-list:media-list--small media-list--dark }}
+    {{/is_small_dark}}
   </div>
 </section>
