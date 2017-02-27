@@ -1,24 +1,33 @@
-<form action="#" class="filter-form form" method="GET">
+{{#filter-form}}
+<form action="#" class="form" method="GET">
   <div class="row">
     <div class="col-md-3">
       <div class="form-group">
-        {{>atoms-input}}
+        {{#title}}
+          {{>atoms-input}}
+        {{/title}}
       </div>
     </div>
     <div class="col-md-3">
       <div class="form-group">
-        {{>atoms-input}}
+        {{#discipline}}
+          {{>atoms-select}}
+        {{/discipline}}
       </div>
     </div>
     <div class="col-md-3">
       <div class="form-group">
-        {{>atoms-input}}
+        {{#location}}
+          {{>atoms-select}}
+        {{/location}}
       </div>
     </div>
     <div class="col-md-3">
       <div class="row">
         <div class="col-md-6">
-          {{>atoms-button:expand}}
+          {{#submit}}
+            {{>atoms-button:expand}}
+          {{/submit}}
         </div>
         <div class="col-md-6">
           {{>atoms-button:button--underline expand}}
@@ -27,3 +36,4 @@
     </div>
   </div>
 </form>
+{{/filter-form}}
