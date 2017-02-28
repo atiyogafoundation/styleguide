@@ -2,6 +2,10 @@
   position: relative;
   margin-top: @section-margin-mobile;
 
+  &:last-child {
+    margin-bottom: @section-margin-mobile;
+  }
+
   &--default {
     .container();
   }
@@ -28,6 +32,10 @@
 
   @media (min-width: @screen-md-min) {
     margin-top: @section-margin;
+
+    &:last-child {
+      margin-bottom: @section-margin;
+    }
 
     &--light {
       padding-top: (@section-margin - 10px);
