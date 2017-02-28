@@ -28,6 +28,10 @@
     + .section--light {
       margin-top: -@section-margin-mobile;
     }
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
   }
 
   @media (min-width: @screen-md-min) {
@@ -205,3 +209,12 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+.section[data-type="list"] {
+  margin-bottom: @section-margin-mobile;
+
+  @media (min-width: @screen-md-min) {
+    margin-bottom: @section-margin;
+  }
+}
+
