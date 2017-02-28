@@ -1,0 +1,159 @@
+.header {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: @font-family-secondary;
+  font-weight: 800;
+  font-size: @font-size-small;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+
+    &.active,
+    &:hover,
+    &:focus {
+      color: @brand-primary;
+    }
+  }
+
+  &__main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: @gray-darker;
+    padding: 10px 0;
+
+    .row {
+      .make-row(0);
+      position: relative;
+
+      *[class^="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .button {
+      .button.set-hollow-color(#fff, @gray-darker);
+      padding: 3px 16px;
+      height: auto;
+    }
+
+    .logo {
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      display: block;
+      background-color: #f6f6f6;
+      padding: 12px 34px 12px 30px;
+      margin-left: -60px;
+      height: 112px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    nav ul {
+      .list-inline();
+      padding-left: 0;
+      margin-left: 20px;
+      margin-bottom: 0;
+      letter-spacing: 0.65px;
+
+      li {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  &__aside__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 15px;
+
+    > span {
+      display: inline-block;
+      padding: 0 8px;
+
+      &:first-child {
+        padding: 0 20px;
+      }
+    }
+
+    .hamburgher {
+      .size(22px, 17px);
+      position: relative;
+      display: inline-block;
+      padding: 0;
+
+      &:before,
+      &:after {
+        .size(22px, 3px);
+        background-color: #fff;
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 0;
+        content: '';
+        transition: all .4s ease;
+        border-radius: 7px;
+        transition: transform .32s ease;
+      }
+
+      &:before {
+        margin-top: -5px;
+      }
+
+      &:after {
+        margin-top: 9px;
+      }
+
+      &__line {
+        .size(22px, 3px);
+        position: relative;
+        top: -3px;
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 7px;
+        transition: transform .32s ease;
+      }
+    }
+
+    &:hover {
+      .hamburgher {
+        &:before {
+          transform: scaleX(0.6);
+        }
+
+        &:after {
+          transform: scaleX(0.6);
+        }
+      }
+    }
+
+    &.toggle .hamburgher {
+      &__line {
+        transform: scaleX(0);
+        opacity: 0;
+      }
+
+      &:before {
+        transform: translateY(6px) rotate(45deg);
+      }
+
+      &:after {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+}
