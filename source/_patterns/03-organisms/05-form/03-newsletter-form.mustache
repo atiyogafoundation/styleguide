@@ -1,0 +1,16 @@
+{{#newsletter-form}}
+<form action="" class="form newsletter-form">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="form-group">
+        {{#email}} {{>atoms-input }} {{/email}}
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        {{#submit}} {{>atoms-button:expand }} {{/submit}}
+      </div>
+    </div>
+  </div>
+</form>
+{{/newsletter-form}}

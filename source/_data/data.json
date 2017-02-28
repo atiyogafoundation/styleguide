@@ -377,5 +377,22 @@
         "text": "Send Message"
       }
     }
+  },
+  "newsletter-form": {
+    "email": {
+      "input": {
+        "type": "text",
+        "placeholder": "Enter your email",
+        "name": "email",
+        "required": true,
+        "value": ""
+      }
+    },
+    "submit": {
+      "button": {
+        "is_anchor": false,
+        "text": "Send Message"
+      }
+    }
   }
 }
