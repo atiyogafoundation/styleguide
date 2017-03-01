@@ -4,16 +4,21 @@
 }
 
 .header__main,
+.header__aside,
 .main-container,
 .footer {
-  transition: transform .8s ease;
+  transition: transform .5s ease;
 }
 
 body.menu-toggle {
   .header__main,
   .main-container,
   .footer {
-    transform: translateX(-300px);
+    transform: translateX(-@header-aside-width-base);
+  }
+
+  .header__aside {
+    transform: translateX(0);
   }
 
   .header.set-toggle-style();
