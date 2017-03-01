@@ -1,4 +1,33 @@
 .header {
+  .set-toggle-style() {
+    .header__aside__toggle {
+      .hamburgher {
+        &__line {
+          transform: scaleX(0);
+          opacity: 0;
+        }
+
+        &:before {
+          transform: translateY(6px) rotate(45deg);
+        }
+
+        &:after {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+
+      &:hover .hamburgher {
+        &:before {
+          transform: translateY(6px) rotate(45deg) scale(1.1);
+        }
+
+        &:after {
+          transform: translateY(-8px) rotate(-45deg) scale(1.1);
+        }
+      }
+    }
+  }
+
   text-transform: uppercase;
   color: #fff;
   font-family: @font-family-secondary;
@@ -138,21 +167,6 @@
         &:after {
           transform: scaleX(0.6);
         }
-      }
-    }
-
-    &.toggle .hamburgher {
-      &__line {
-        transform: scaleX(0);
-        opacity: 0;
-      }
-
-      &:before {
-        transform: translateY(6px) rotate(45deg);
-      }
-
-      &:after {
-        transform: translateY(-8px) rotate(-45deg);
       }
     }
   }

@@ -1,3 +1,27 @@
+/*===================================
+=            Menu toggle            =
+===================================*/
+
+(function($) {
+  var
+    $body = $('body'),
+    $toggle = $('.header__aside__toggle')
+  ;
+
+  $toggle.on('click', function(e) {
+    e.preventDefault();
+    $body.toggleClass('menu-toggle');
+  });
+
+})(jQuery);
+
+/*=====  End of Menu toggle  ======*/
+
+
+/*=================================
+=            Carousels            =
+=================================*/
+
 (function($, device, Swiper) {
   var $cardsCarousel = $('.card-carousel');
 
@@ -68,6 +92,9 @@
 
 })(jQuery, device, Swiper);
 
+/*=====  End of Carousels  ======*/
+
+
 
 /*====================================
 =            Contacts Map            =
@@ -97,3 +124,6 @@
   }
 
 })(jQuery);
+
+/*=====  End of Contacts Map  ======*/
+

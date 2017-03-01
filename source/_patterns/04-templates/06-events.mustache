@@ -1,12 +1,14 @@
 {{>organisms-header}}
 
-{{>molecules-jumbotron}}
+<main role="main" class="main-container">
+  {{>molecules-jumbotron}}
 
-<div class="section section--fluid" data-type="list">
-  <div class="section-wrapper">
-    {{>organisms-filter-form}}
-    {{>organisms-card-list }}
+  <div class="section section--fluid" data-type="list">
+    <div class="section-wrapper">
+      {{>organisms-filter-form}}
+      {{>organisms-card-list }}
+    </div>
   </div>
-</div>
+</main>
 
 {{>organisms-footer}}

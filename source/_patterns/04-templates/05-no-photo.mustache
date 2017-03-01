@@ -1,31 +1,33 @@
 {{>organisms-header}}
 
-<div class="post">
-  <header class="post__header">
-    <div class="post__header__wrapper">
-      <div class="post__header__inner">
-        {{>molecules-breadcrumb}}
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse posuere neque et eros cursus varius. Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p>
+<main role="main" class="main-container">
+  <div class="post">
+    <header class="post__header">
+      <div class="post__header__wrapper">
+        <div class="post__header__inner">
+          {{>molecules-breadcrumb}}
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse posuere neque et eros cursus varius. Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <aside class="post__aside">
-    <div class="post__aside__wrapper">
-      <div class="post__aside__inner">
-        {{>molecules-nav-group}}
-        {{>atoms-button-cta}}
-        {{>molecules-panel}}
-        {{>molecules-panel:panel--dark}}
+    <aside class="post__aside">
+      <div class="post__aside__wrapper">
+        <div class="post__aside__inner">
+          {{>molecules-nav-group}}
+          {{>atoms-button-cta}}
+          {{>molecules-panel}}
+          {{>molecules-panel:panel--dark}}
+        </div>
       </div>
-    </div>
-  </aside>
+    </aside>
 
-  <article class="post__body">
-    {{>organisms-section-text:section--offset}}
-    {{>organisms-section-preview:section--offset}}
-  </article>
-</div>
+    <article class="post__body">
+      {{>organisms-section-text:section--offset}}
+      {{>organisms-section-preview:section--offset}}
+    </article>
+  </div>
+</main>
 
 {{>organisms-footer}}

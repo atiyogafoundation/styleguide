@@ -1,0 +1,20 @@
+.main-container {
+  position: relative;
+  background-color: #fff;
+}
+
+.header__main,
+.main-container,
+.footer {
+  transition: transform .8s ease;
+}
+
+body.menu-toggle {
+  .header__main,
+  .main-container,
+  .footer {
+    transform: translateX(-300px);
+  }
+
+  .header.set-toggle-style();
+}
