@@ -202,16 +202,39 @@
 
         > li {
           padding-left: 0;
+          margin-bottom: 0;
 
           > a {
             font-weight: inherit;
             color: inherit;
+            display: block;
+            height: 54px;
+            padding: 15px 20px;
 
-            &:hover {
+            &:hover,
+            &:focus {
               color: @gray-darker;
               background-color: #fff;
             }
           }
+        }
+      }
+    }
+
+    &--navigation {
+      .square(100%);
+      position: absolute;
+      top: 54px;
+      left: 0;
+      overflow-y: auto;
+
+      ul {
+        .list-unstyled();
+        padding: 50px;
+        margin-left: 0;
+
+        li + li {
+          margin-top: 50px;
         }
       }
     }
