@@ -55,7 +55,8 @@
             "bower_components/lazysizes/lazysizes.min.js",
             "bower_components/lazysizes/plugins/bgset/ls.bgset.min.js",
             "bower_components/lazysizes/plugins/parent-fit/ls.parent-fit.js",
-            "bower_components/outdated-browser/outdatedbrowser/outdatedbrowser.min.js"
+            "bower_components/outdated-browser/outdatedbrowser/outdatedbrowser.min.js",
+            "bower_components/bootstrap/js/dropdown.js"
           ]
         }
       }

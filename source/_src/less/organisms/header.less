@@ -179,6 +179,42 @@
     width: @header-aside-width-base;
     background-color: @gray-darker;
     transform: translateX(@header-aside-width-base);
+
+    &--language {
+      position: relative;
+
+      .button {
+        width: 100%;
+        height: 54px;
+        border: 0;
+      }
+
+      .dropdown-menu {
+        width: 100%;
+        border-radius: 0;
+        background-color: #141414;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        border-top: 1px solid #383838;
+        font-size: inherit;
+        font-weight: 800;
+
+        > li {
+          padding-left: 0;
+
+          > a {
+            font-weight: inherit;
+            color: inherit;
+
+            &:hover {
+              color: @gray-darker;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
   }
 
   @media (min-width: @screen-sm-min) {
