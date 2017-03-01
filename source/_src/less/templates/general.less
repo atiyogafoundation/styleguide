@@ -14,7 +14,7 @@ body.menu-toggle {
   .header__main,
   .main-container,
   .footer {
-    transform: translateX(-@header-aside-width-base);
+    transform: translateX(-@header-aside-width-mobile);
   }
 
   .header__aside {
@@ -22,4 +22,12 @@ body.menu-toggle {
   }
 
   .header.set-toggle-style();
+
+  @media (min-width: @screen-sm-min) {
+    .header__main,
+    .main-container,
+    .footer {
+      transform: translateX(-@header-aside-width-base);
+    }
+  }
 }

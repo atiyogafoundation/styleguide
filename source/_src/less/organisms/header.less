@@ -176,9 +176,9 @@
     top: 0;
     bottom: 0;
     right: 0;
-    width: @header-aside-width-base;
     background-color: @gray-darker;
-    transform: translateX(@header-aside-width-base);
+    width: @header-aside-width-mobile;
+    transform: translateX(@header-aside-width-mobile);
 
     &--language {
       position: relative;
@@ -230,11 +230,11 @@
 
       ul {
         .list-unstyled();
-        padding: 50px;
+        padding: 20px;
         margin-left: 0;
 
         li + li {
-          margin-top: 50px;
+          margin-top: 20px;
         }
       }
     }
@@ -244,6 +244,19 @@
     &__main {
       .logo {
         padding: 12px 34px 12px 30px;
+      }
+    }
+
+    &__aside {
+      width: @header-aside-width-base;
+      transform: translateX(@header-aside-width-base);
+
+      &--navigation ul {
+        padding: 50px;
+
+        li + li {
+          margin-top: 50px;
+        }
       }
     }
   }
