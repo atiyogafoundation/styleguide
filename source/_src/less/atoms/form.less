@@ -47,7 +47,7 @@
   }
 
   .form-group {
-    margin-bottom: floor(@grid-gutter-width / 1.6);
+    margin-bottom: floor(@line-height-computed-mobile / 2);
 
     .checkbox,
     .radio {
@@ -58,5 +58,9 @@
 
   @media (min-width: @screen-sm-min) {
     margin-bottom: @line-height-computed;
+
+    .form-group {
+      margin-bottom: floor(@grid-gutter-width / 1.6);
+    }
   }
 }
