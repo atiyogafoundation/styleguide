@@ -95,7 +95,6 @@
 /*=====  End of Carousels  ======*/
 
 
-
 /*====================================
 =            Contacts Map            =
 ====================================*/
@@ -126,4 +125,51 @@
 })(jQuery);
 
 /*=====  End of Contacts Map  ======*/
+
+
+/*=======================================
+=            Preview Gallery            =
+=======================================*/
+
+(function($) {
+
+  var $previews = $('.preview');
+
+  $previews.each(function() {
+    var
+      $current = $(this),
+      galleryList = []
+    ;
+
+    $current
+      .find('.preview__gallery-list li')
+      .each(function() {
+        galleryList.push({
+          src: $(this).data('src'),
+          subHtml: $(this).html()
+        });
+      });
+
+    console.log(galleryList);
+
+    $current
+      .find('.preview__anchor')
+      .on('click', function(e) {
+        e.preventDefault();
+
+        $current.lightGallery({
+          fullScreen: true,
+          zoom: true,
+          dynamic: true,
+          dynamicEl: galleryList
+        });
+      });
+
+  });
+
+})(jQuery);
+
+
+/*=====  End of Preview Gallery  ======*/
+
 

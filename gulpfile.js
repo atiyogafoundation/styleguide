@@ -5,6 +5,7 @@ var path = require('path');
 var shell = require('gulp-shell');
 var config = require('./config.json');
 var merge = require('merge-stream');
+var concatCss = require('gulp-concat-css');
 
 // Errors handler
 var onError = function(err) {
