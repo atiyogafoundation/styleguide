@@ -42,6 +42,17 @@
     }
   }
 
+  &__sharer {
+    .container-fluid();
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    .sharer {
+      margin-bottom: floor(@line-height-computed-mobile * 2);
+    }
+  }
+
   &__body .section:first-child {
     margin-top: 0;
   }
@@ -88,6 +99,14 @@
         top: 0;
         left: 0;
         z-index: 1;
+      }
+    }
+
+    &__sharer {
+      .sharer {
+        position: absolute;
+        top: 0;
+        right: floor(@grid-gutter-width / 2);
       }
     }
   }

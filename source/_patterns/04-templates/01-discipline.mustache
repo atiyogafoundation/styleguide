@@ -22,6 +22,10 @@
       </div>
     </aside>
 
+    <div class="post__sharer">
+      {{>molecules-sharer}}
+    </div>
+
     <article class="post__body">
       {{>organisms-section-text:section--offset}}
       {{>organisms-section-preview:section--offset}}
@@ -36,6 +40,8 @@
       {{>organisms-section-media:section--fluid(is_small_dark:true)}}
       {{>organisms-section-product-carousel:section--full section--light}}
     </article>
+
+
   </div>
 </main>
 
