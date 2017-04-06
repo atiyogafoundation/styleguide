@@ -233,8 +233,12 @@
         padding: 20px;
         margin-left: 0;
 
-        li + li {
-          margin-top: 20px;
+        li {
+          margin-bottom: 20px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }
@@ -254,8 +258,8 @@
       &--navigation ul {
         padding: 50px;
 
-        li + li {
-          margin-top: 50px;
+        li {
+          margin-bottom: 50px;
         }
       }
     }
