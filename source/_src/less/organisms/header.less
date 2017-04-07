@@ -106,8 +106,37 @@
       margin-bottom: 0;
 
       li {
+        position: relative;
         padding-right: 16px;
         padding-left: 16px;
+
+        > a {
+          position: relative;
+          z-index: 1;
+        }
+
+        ul {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-top: 60px;
+          padding-bottom: 20px;
+          right: 0;
+          background-color: @gray-darker;
+          display: none;
+
+          li {
+            display: block;
+            margin-bottom: 20px;
+          }
+        }
+
+        &:hover ul {
+          display: block;
+        }
       }
     }
   }
