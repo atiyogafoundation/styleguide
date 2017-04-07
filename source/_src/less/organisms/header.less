@@ -78,12 +78,24 @@
       left: 0;
       right: 0;
       display: block;
-      background-color: #f6f6f6;
       padding: 15px 10px;
       margin-left: -20px;
 
       img {
+        position: relative;
         width: 100%;
+        z-index: 1;
+      }
+
+      &:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: -9999px;
+        bottom: 0;
+        background-color: #f6f6f6;
+        content: '';
+        display: block;
       }
     }
 
