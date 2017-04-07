@@ -173,3 +173,22 @@
 /*=====  End of Preview Gallery  ======*/
 
 
+/*=========================================
+=            Footer Scroll Top            =
+=========================================*/
+
+(function($) {
+
+  $('.footer__scroll-top').on('click', function(e) {
+    e.preventDefault();
+
+    $.scrollTo(0, 1000, {
+      axis: 'y',
+      interrupt: true
+    });
+  });
+
+})(jQuery);
+
+/*=====  End of Footer Scroll Top  ======*/
+
