@@ -192,3 +192,28 @@
 
 /*=====  End of Footer Scroll Top  ======*/
 
+
+/*=========================================
+=            Post Sharer Affix            =
+=========================================*/
+
+(function($) {
+  var
+    $postSharer = $('.post__sharer .sharer'),
+    $lastSectionText = $('.post__body .section[data-type="text"]')
+  ;
+
+  $postSharer.affix({
+    offset: {
+      top: 50 + $postSharer.outerHeight(),
+      bottom: function () {
+        return (this.bottom = $lastSectionText.next().offset().top + 100);
+      }
+    }
+  });
+
+})(jQuery);
+
+/*=====  End of Post Sharer Affix  ======*/
+
+

@@ -45,7 +45,7 @@
   &__sharer {
     .container-fluid();
     position: relative;
-    z-index: 1;
+    z-index: 2;
     text-align: center;
 
     .sharer {
@@ -68,6 +68,12 @@
     &__header__inner {
       padding-left: @grid-gutter-width;
       padding-right: @grid-gutter-width;
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    &__sharer .sharer {
+      position: relative !important;
     }
   }
 
@@ -114,6 +120,15 @@
         position: absolute;
         top: 0;
         right: floor(@grid-gutter-width / 2);
+
+        &.affix {
+          position: fixed !important;
+          z-index: 4;
+          bottom: 100px;
+          top: auto;
+          margin-right: 20px;
+          right: 0;
+        }
       }
     }
 
@@ -149,6 +164,15 @@
             left: 0;
           }
         }
+      }
+    }
+  }
+
+  @media (min-width: 1380px) {
+    &__sharer {
+      .sharer.affix {
+        margin-right: (-690px + (40px / 2));
+        right: 50%;
       }
     }
   }
