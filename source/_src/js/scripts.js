@@ -261,4 +261,28 @@
 /*=====  End of Post Body Min height check  ======*/
 
 
+/*===========================================
+=            Header Progress Bar            =
+===========================================*/
+
+(function($) {
+
+  var
+    $document = $(document),
+    $window = $(window)
+    $progress = $('.header__progress-bar')
+  ;
+
+  $window.on('scroll', function() {
+    var scrollPercent = $window.scrollTop() / ($document.height() - $window.height());
+
+    $progress.css('width', (scrollPercent * 100) + '%');
+  });
+
+})(jQuery);
+
+/*=====  End of Header Progress Bar  ======*/
+
+
+
 
