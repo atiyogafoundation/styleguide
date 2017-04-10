@@ -8,10 +8,33 @@
         "640": "http://placehold.it/640x360"
       },
       "title": "Tibetan Culture Week Arcidosso, Italy",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nobis voluptas officia delectus, laudantium dicta id mollitia, vero maiores consequatur odio alias! Illum repellat repudiandae sint facere natus. Tenetur, eos.",
       "button-icon": {
         "icon": "camera",
         "text": "Open Gallery"
-      }
+      },
+      "gallery-list": [
+        {
+          "src": "http://68.media.tumblr.com/ef71091b57992c63cd6b6371160694b7/tumblr_o9c283SMGZ1st5lhmo1_1280.jpg",
+          "subHtml": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod enim est libero dolorum quam ut, reprehenderit nisi quae, quos placeat explicabo beatae praesentium eos modi quas minus magnam sed soluta."
+        },
+        {
+          "src": "http://68.media.tumblr.com/4fcf20d7631aff0d2a24d0ce3a956d9f/tumblr_o9c2s3dCQL1st5lhmo1_1280.jpg",
+          "subHtml": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, tenetur, sint. Odio possimus deleniti sequi excepturi fugiat, molestias amet fuga vel neque, perferendis totam? Dolorum dolore beatae, magnam asperiores libero!"
+        },
+        {
+          "src": "http://68.media.tumblr.com/bb94d05f5881bcc4b8e100818135a86c/tumblr_o9hc6qTj5Q1st5lhmo1_1280.jpg",
+          "subHtml": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus voluptatibus expedita alias distinctio quas! Autem magni quasi in distinctio totam odit! Praesentium quam illum, tempora voluptate eum necessitatibus, molestiae numquam."
+        },
+        {
+          "src": "http://68.media.tumblr.com/1c231fa8526a2f47e557109e8b307899/tumblr_o8pumfyDR11st5lhmo1_1280.jpg",
+          "subHtml": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, officiis? Molestiae recusandae quia ad corporis, omnis doloribus perferendis consectetur iure, quasi nobis a enim praesentium. Esse incidunt deserunt sint et!"
+        },
+        {
+          "src": "http://68.media.tumblr.com/b7355206f8ad142d3a50d722baa1c11d/tumblr_o8pudm4Y0S1st5lhmo1_1280.jpg",
+          "subHtml": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque perferendis sapiente cumque eos commodi ipsam nemo vero. Iste debitis assumenda dolores, perspiciatis illum nostrum eum, totam ipsum minima id at."
+        }
+      ]
     }
   }
 }
