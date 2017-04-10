@@ -1,7 +1,6 @@
 .section {
   position: relative;
   margin-top: @section-margin-mobile;
-  background-color: @body-bg;
 
   &:last-child {
     margin-bottom: @section-margin-mobile;
@@ -18,7 +17,7 @@
 
   &--aside {
     .container-fluid();
-    z-index: 10;
+    z-index: 1;
   }
 
   &--light {
@@ -149,9 +148,6 @@
 }
 
 .section[data-type="image"] {
-  position: relative;
-  z-index: 2;
-
   img {
     width: 100%;
   }
@@ -207,6 +203,9 @@
 }
 
 .section[data-type="carousel"] {
+  position: relative;
+  z-index: 2;
+
   .carousel {
     margin-bottom: 0;
 
