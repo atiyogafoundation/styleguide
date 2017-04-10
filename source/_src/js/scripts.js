@@ -1,11 +1,12 @@
-/*===================================
-=            Menu toggle            =
-===================================*/
+/*============================
+=            Menu            =
+============================*/
 
 (function($) {
   var
     $body = $('body'),
-    $toggle = $('.header__aside__toggle')
+    $toggle = $('.header__aside__toggle'),
+    $navigation = $('.header__aside--navigation')
   ;
 
   $toggle.on('click', function(e) {
@@ -13,9 +14,23 @@
     $body.toggleClass('menu-toggle');
   });
 
+  $navigation
+    .find('.has-children')
+    .on('click', 'a:first', function(e) {
+      e.preventDefault();
+
+      $(this)
+        .next('div')
+        .stop()
+        .slideToggle({
+          duration: 300,
+          specialEasing: 'ease-in-out'
+        });
+    });
+
 })(jQuery);
 
-/*=====  End of Menu toggle  ======*/
+/*=====  End of Menu  ======*/
 
 
 /*=================================
