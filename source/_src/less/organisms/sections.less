@@ -1,6 +1,7 @@
 .section {
   position: relative;
   margin-top: @section-margin-mobile;
+  background-color: @body-bg;
 
   &:last-child {
     margin-bottom: @section-margin-mobile;
@@ -17,7 +18,7 @@
 
   &--aside {
     .container-fluid();
-    z-index: 1;
+    z-index: 10;
   }
 
   &--light {
@@ -148,6 +149,9 @@
 }
 
 .section[data-type="image"] {
+  position: relative;
+  z-index: 2;
+
   img {
     width: 100%;
   }
@@ -169,6 +173,9 @@
 }
 
 .section[data-type="media"] {
+  position: relative;
+  z-index: 2;
+
   .media-list .media:last-child {
     margin-bottom: 0;
   }

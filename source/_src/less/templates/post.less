@@ -64,6 +64,23 @@
     }
   }
 
+  .section {
+    background-color: @body-bg;
+
+    &--aside {
+      z-index: 10;
+    }
+
+    &[data-type="image"],
+    &[data-type="media"],
+    &[data-type="carousel"],
+    &[data-type="map"],
+    &[data-type="list"] {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
   @media (max-width: @screen-xs-max) {
     &__header__inner {
       padding-left: @grid-gutter-width;
