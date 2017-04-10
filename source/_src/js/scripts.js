@@ -165,8 +165,6 @@
         });
       });
 
-    console.log(galleryList);
-
     $current
       .find('.preview__anchor')
       .on('click', function(e) {
@@ -179,7 +177,6 @@
           dynamicEl: galleryList
         });
       });
-
   });
 
 })(jQuery);
@@ -218,17 +215,50 @@
     $lastSectionText = $('.post__body .section[data-type="text"]')
   ;
 
-  $postSharer.affix({
-    offset: {
-      top: 50 + $postSharer.outerHeight(),
-      bottom: function () {
-        return (this.bottom = $lastSectionText.next().offset().top + 100);
+  if ($lastSectionText.next().length > 0) {
+    $postSharer.affix({
+      offset: {
+        top: 50 + $postSharer.outerHeight(),
+        bottom: function () {
+          return (this.bottom = $lastSectionText.next().offset().top + 100);
+        }
       }
-    }
-  });
-
+    });
+  }
 })(jQuery);
 
 /*=====  End of Post Sharer Affix  ======*/
+
+
+/*==================================================
+=            Post Body Min height check            =
+==================================================*/
+
+(function($) {
+
+  var
+    $window = $(window),
+    $postAside = $('.post__aside__inner'),
+    $postBody = $('.post__body')
+  ;
+
+  function checkHeights() {
+    if ($postAside.length > 0) {
+      $postBody.css('minHeight', 'initial');
+
+      if ($postAside.height() > $postBody.height()) {
+        $postBody.css('minHeight', $postAside.height());
+      }
+    }
+  }
+
+  $window.on('resize', checkHeights);
+
+  checkHeights();
+
+})(jQuery);
+
+/*=====  End of Post Body Min height check  ======*/
+
 
 
