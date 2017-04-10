@@ -87,13 +87,27 @@ ul {
     li {
       position: relative;
       padding-left: (@font-size-base-mobile + 10px);
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       .icon {
         position: absolute;
         left: 0;
         top: 0;
-        margin-top: floor(@font-size-base-mobile / 3.5);
-        color: @gray-darker;
+        margin-top: 3px;
+        color: inherit;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
@@ -102,10 +116,6 @@ ul {
     &.has-icon-pointer {
       li {
         padding-left: (@font-size-base + 10px);
-
-        .icon {
-          margin-top: floor(@font-size-base / 2.5);
-        }
       }
     }
   }
