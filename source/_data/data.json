@@ -79,6 +79,11 @@
     "icon": "plus",
     "text": "Lorem Ipsum"
   },
+  "button-cta": {
+    "href": "#",
+    "icon": "cart",
+    "text": "Shop online"
+  },
   "preview": {
     "href": "#",
     "image": {
@@ -309,6 +314,12 @@
       "button": {
         "is_anchor": false,
         "text": "Filter"
+      }
+    },
+    "more": {
+      "button-icon": {
+        "icon": "calendar",
+        "href": "#"
       }
     }
   },
