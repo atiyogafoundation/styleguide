@@ -1,0 +1,51 @@
+{
+  "organizer-panel": {
+    "panel": {
+      "body": "<h3>ORGANIZER</h3><p>Shang Shung Institute UK</p>"
+    }
+  },
+  "status-panel": {
+    "panel": {
+      "body": "<h3>STATUS</h3><p>Preparation</p>"
+    }
+  },
+  "languages-panel": {
+    "panel": {
+      "body": "<h3>EVENT LANGUAGES</h3><ul><li>English</li><li>Italian</li></ul>"
+    }
+  },
+  "timing-panel": {
+    "panel": {
+      "body": "<h3>TIMING</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quos soluta deleniti praesentium amet, blanditiis officia quo qui impedit minus natus rerum odio quis velit deserunt vitae! Aliquam, officia, ullam.</p>"
+    }
+  },
+  "venue-panel": {
+    "panel": {
+      "body": "<h3>VENUE</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quos soluta deleniti praesentium amet, blanditiis officia quo qui impedit minus natus rerum odio quis velit deserunt vitae! Aliquam, officia, ullam.</p>"
+    }
+  },
+  "payments-panel": {
+    "panel": {
+      "body": "<h3>PAYMENT METHODS</h3><p>Paypal, Bank transfer, Lorem ipsum, dolor sit.</p>"
+    }
+  },
+  "button-register": {
+    "button-cta": {
+      "href": "#",
+      "icon": "clipboard",
+      "text": "Register Now"
+    }
+  },
+  "contact-panel": {
+    "panel": {
+      "body": "<h3>CONTACTS INFO</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><p><a href=\"#\" class=\"button-link\"><i class=\"icon icon--at-sign\"></i> johndoe@foo.com</a></p>"
+    }
+  },
+  "button-calendar": {
+    "button-cta": {
+      "href": "#",
+      "icon": "calendar",
+      "text": "Add in calendar"
+    }
+  }
+}

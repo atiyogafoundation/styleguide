@@ -1,0 +1,69 @@
+{{>organisms-header}}
+
+<main role="main" class="main-container">
+  <div class="post">
+    <header class="post__header">
+      <div class="post__header__wrapper">
+        <div class="post__header__inner">
+          {{>molecules-breadcrumb}}
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Suspendisse posuere neque et eros cursus varius. Mauris interdum leo vitae massa hendrerit, vitae gravida mi congue. Etiam imperdiet non risus sit amet consectetur.</p>
+        </div>
+      </div>
+    </header>
+
+    <aside class="post__aside">
+      <div class="post__aside__wrapper">
+        <div class="post__aside__inner">
+          {{#organizer-panel}}
+            {{>molecules-panel}}
+          {{/organizer-panel}}
+
+          {{#status-panel}}
+            {{>molecules-panel}}
+          {{/status-panel}}
+
+          {{#languages-panel}}
+            {{>molecules-panel}}
+          {{/languages-panel}}
+
+          {{#timing-panel}}
+            {{>molecules-panel}}
+          {{/timing-panel}}
+
+          {{#venue-panel}}
+            {{>molecules-panel}}
+          {{/venue-panel}}
+
+          {{#payments-panel}}
+            {{>molecules-panel}}
+          {{/payments-panel}}
+
+          {{#button-register}}
+            {{>atoms-button-cta}}
+          {{/button-register}}
+
+          {{#contact-panel}}
+            {{>molecules-panel}}
+          {{/contact-panel}}
+
+          {{#button-calendar}}
+            {{>atoms-button-cta}}
+          {{/button-calendar}}
+        </div>
+      </div>
+    </aside>
+
+    <div class="post__sharer">
+      {{>molecules-sharer}}
+    </div>
+
+    <article class="post__body post__body--offsets">
+      {{>organisms-section-text}}
+      {{>organisms-section-preview}}
+      {{>organisms-section-card-carousel:section--full section--light}}
+    </article>
+  </div>
+</main>
+
+{{>organisms-footer}}
