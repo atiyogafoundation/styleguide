@@ -1,9 +1,16 @@
-<div class="jumbotron">
+<div class="jumbotron" style="background-image: url({{ jumbotron.image }})">
   <div class="jumbotron__body">
     <div class="jumbotron__body__wrapper">
-      {{> molecules-breadcrumb }}
+      {{#jumbotron.breadcrumb}}
+        {{> molecules-breadcrumb }}
+      {{/jumbotron.breadcrumb}}
+
       <h1>{{ jumbotron.title }}</h1>
       <p>{{ jumbotron.text }}</p>
+
+      {{# jumbotron.cta }}
+        {{>atoms-button }}
+      {{/ jumbotron.cta }}
     </div>
   </div>
 </div>
