@@ -1,0 +1,15 @@
+{{#card-event-list}}
+<div class="card-list card-list--event">
+  <div class="card-list__header {{ columns }}">
+    <h2>Event list</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis porro non cumque illo molestiae veniam, placeat soluta omnis consequuntur quia culpa, aliquam odit facere voluptas tenetur expedita accusantium tempora maxime!</p>
+    {{>atoms-button-icon}}
+  </div>
+
+  {{#items}}
+    <div class="{{ columns }}">
+      {{>molecules-card-event}}
+    </div>
+  {{/items}}
+</div>
+{{/card-event-list}}

@@ -11,9 +11,21 @@
     margin-bottom: floor(@grid-gutter-width / 2);
   }
 
+  &__header {
+    margin-bottom: @grid-gutter-width;
+
+    p {
+      font-size: @font-size-small;
+    }
+  }
+
   @media (min-width: @screen-sm-min) {
     .card {
       margin-bottom: @gutter;
+    }
+
+    &__header {
+      padding-right: @gutter;
     }
   }
 

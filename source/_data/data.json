@@ -193,9 +193,26 @@
     "body": "<h3><a href=\"#\">Lorem ipsum west Lorem ipsum west</a></h3><p>Lorem ipsum west Lorem ipsum west Lorem ipsum west Lorem ipsum west</p>",
     "footer": "<h3>Lorem ipsum west Lorem ipsum west</h3><p>from FRIDAY 07 SEPTEMBER 2016 <br>to TUESDAY 11 SEPTEMBER 2016</p>"
   },
+  "card-event": {
+    "card": {
+      "href": "#",
+      "image": "http://placehold.it/630x400",
+      "body": "<h3><a href=\"#\">Loremss ipsum west Lorem ipsum west</a></h3>",
+      "footer": "<a href=\"#\">1 Upcoming events</a>"
+    }
+  },
   "card-list": {
     "columns": "col-xs-12 col-sm-6 col-md-4 col-lg-3",
     "items": [[],[],[],[],[],[],[],[],[],[],[],[]]
+  },
+  "card-event-list": {
+    "columns": "col-xs-12 col-sm-6 col-lg-3",
+    "items": [[],[],[]],
+    "button-icon": {
+      "href": "#",
+      "icon": "link",
+      "text": "Discover More"
+    }
   },
   "card-carousel": {
     "title": "Lorem ipsum asi amet",

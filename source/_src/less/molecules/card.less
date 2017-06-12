@@ -125,4 +125,38 @@
 
     font-size: 12px;
   }
+
+  &--event {
+    color: @text-color;
+    background-color: transparent !important;
+
+    .card__body {
+      padding-left: 5px;
+      padding-right: 5px;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: @gray-darker;
+      }
+    }
+
+    .card__tags {
+      display: none;
+    }
+
+    .card__footer {
+      padding-left: 5px;
+      padding-right: 5px;
+      border-top: 1px solid #cbcbcb;
+      font-family: @font-family-primary;
+      text-transform: capitalize;
+      background-color: transparent !important;
+      font-weight: 400;
+      font-size: @font-size-small;
+    }
+  }
 }
