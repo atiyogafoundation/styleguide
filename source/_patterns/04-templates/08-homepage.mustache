@@ -1,0 +1,30 @@
+{{>organisms-header}}
+
+<main role="main" class="main-container">
+
+  <section class="section section--aside" data-type="row-list">
+    <div class="section__wrapper">
+      {{#home-cta-list}}
+        {{>atoms-button-cta}}
+      {{/home-cta-list}}
+    </div>
+  </section>
+
+  {{#mission}}
+    {{>organisms-section-text:section--offset}}
+  {{/mission}}
+
+  {{#event-list-text}}
+    {{>organisms-section-text:section--default section--light}}
+  {{/event-list-text}}
+
+  {{>organisms-section-card-event-list:section--fluid section--light}}
+  {{>organisms-section-card-event-list:section--fluid section--light}}
+  {{>organisms-section-card-event-list:section--fluid section--light}}
+  {{>organisms-section-card-event-list:section--fluid section--light}}
+  {{>organisms-section-card-event-list:section--fluid section--light}}
+
+  {{>organisms-section-card-carousel:section--full}}
+</main>
+
+{{>organisms-footer}}

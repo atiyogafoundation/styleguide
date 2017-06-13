@@ -1,11 +1,25 @@
+{{#jumbotron-carousel}}
 <div class="jumbotron-carousel">
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      {{#jumbotron-carousel}}
+      {{#items}}
         <div class="swiper-slide">
           {{>molecules-jumbotron:has-background}}
         </div>
-      {{/jumbotron-carousel}}
+      {{/items}}
+    </div>
+
+    <div class="jumbotron-carousel__nav">
+      <div class="jumbotron-carousel__nav-wrapper">
+        {{#prev}}
+          {{> atoms-button-icon:jumbotron-carousel__prev}}
+        {{/prev}}
+        <span class="jumbotron-carousel__fraction"></span>
+        {{#next}}
+          {{> atoms-button-icon:jumbotron-carousel__next}}
+        {{/next}}
+      </div>
     </div>
   </div>
 </div>
+{{/jumbotron-carousel}}

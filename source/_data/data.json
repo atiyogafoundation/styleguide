@@ -252,23 +252,69 @@
       }
     }
   },
-  "jumbotron-carousel": [
-    {
-      "jumbotron": {
-        "image": "http://68.media.tumblr.com/21ed1c3a3e45c129709f9e08e49b2db4/tumblr_o8puo9sm7f1st5lhmo1_1280.jpg",
-        "breadcrumb": false,
-        "title": "I am the title of this page ",
-        "text": "I am the subtitle, lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-        "cta": {
-          "button": {
-            "href": "#",
-            "text": "Call to action",
-            "is_anchor": true
+  "jumbotron-carousel": {
+    "next": {
+      "button-icon": {
+        "href": "#",
+        "icon": "arrow-right8",
+        "text": ""
+      }
+    },
+    "prev": {
+      "button-icon": {
+        "href": "#",
+        "icon": "arrow-left8",
+        "text": ""
+      }
+    },
+    "items": [
+      {
+        "jumbotron": {
+          "image": "http://68.media.tumblr.com/21ed1c3a3e45c129709f9e08e49b2db4/tumblr_o8puo9sm7f1st5lhmo1_1280.jpg",
+          "breadcrumb": false,
+          "title": "I am the title of this page ",
+          "text": "I am the subtitle, lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+          "cta": {
+            "button": {
+              "href": "#",
+              "text": "Call to action",
+              "is_anchor": true
+            }
+          }
+        }
+      },
+      {
+        "jumbotron": {
+          "image": "http://68.media.tumblr.com/248d11f348a91800e1494fef35e7768b/tumblr_o9fjy8NNxv1st5lhmo1_1280.jpg",
+          "breadcrumb": false,
+          "title": "I am the title of this page 2",
+          "text": "I am the subtitle, lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+          "cta": {
+            "button": {
+              "href": "#",
+              "text": "Call to action",
+              "is_anchor": true
+            }
+          }
+        }
+      },
+      {
+        "jumbotron": {
+          "image": "http://68.media.tumblr.com/01f9f4d03fb2921d20baed3e169d7291/tumblr_o8h4ukyvev1st5lhmo1_1280.jpg",
+          "breadcrumb": false,
+          "title": "I am the title of this page 3",
+          "text": "I am the subtitle, lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+          "cta": {
+            "button": {
+              "href": "#",
+              "text": "Call to action",
+              "is_anchor": true
+            }
           }
         }
       }
-    }
-  ],
+    ]
+  },
   "product": {
     "href": "#",
     "image": "http://placehold.it/300x445",

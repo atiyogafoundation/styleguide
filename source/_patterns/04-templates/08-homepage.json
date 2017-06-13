@@ -1,0 +1,31 @@
+{
+  "home-cta-list": [
+    {
+      "button-cta": {
+        "href": "#",
+        "icon": "box",
+        "text": "Archive"
+      }
+    },
+    {
+      "button-cta": {
+        "href": "#",
+        "icon": "library",
+        "text": "Publications"
+      }
+    },
+    {
+      "button-cta": {
+        "href": "#",
+        "icon": "piggy-bank",
+        "text": "Fundrising"
+      }
+    }
+  ],
+  "mission": {
+    "richtext": "<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, veniam dolor amet delectus minus velit voluptatem vero dolores veritatis asperiores aperiam sapiente, praesentium animi libero quis? Non voluptatem, dolorum ipsa.</p><p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio commodi fugiat non enim magnam obcaecati, iusto ea libero quod nulla iste sunt aspernatur dolorem, eveniet earum, aliquid fugit velit asperiores!</span><span>Nulla veniam dolore placeat, nisi odit libero hic illo non. Qui, quas dolorem magni sequi, in nesciunt. A soluta perspiciatis sed, similique, tenetur architecto, alias placeat illum nihil ipsa eius.</span></p>"
+  },
+  "event-list-text": {
+    "richtext": "<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, veniam dolor amet delectus minus velit voluptatem vero dolores veritatis asperiores aperiam sapiente, praesentium animi libero quis? Non voluptatem, dolorum ipsa.</p>"
+  }
+}

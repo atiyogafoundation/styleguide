@@ -105,6 +105,33 @@
       });
   });
 
+  var $jumbotronCarousel = $('.jumbotron-carousel');
+
+  $jumbotronCarousel.each(function() {
+    var $current = $(this);
+
+    $current
+      .find('.swiper-container')
+      .swiper({
+        speed: 1000,
+        loop: true,
+        autoplay: 4000,
+        simulateTouch: false,
+        pagination: $current.find('.jumbotron-carousel__fraction'),
+        paginationType: "fraction",
+        paginationHide: false,
+        nextButton: $current.find('.jumbotron-carousel__next'),
+        prevButton: $current.find('.jumbotron-carousel__prev'),
+        onInit: function() {
+          if ($current.find('.swiper-slide').length === 1) {
+            $current
+              .find('.jumbotron-carousel__pagination, .jumbotron-carousel__nav')
+              .remove();
+          }
+        }
+      });
+  });
+
 })(jQuery, device, Swiper);
 
 /*=====  End of Carousels  ======*/
