@@ -252,6 +252,23 @@
       }
     }
   },
+  "jumbotron-carousel": [
+    {
+      "jumbotron": {
+        "image": "http://68.media.tumblr.com/21ed1c3a3e45c129709f9e08e49b2db4/tumblr_o8puo9sm7f1st5lhmo1_1280.jpg",
+        "breadcrumb": false,
+        "title": "I am the title of this page ",
+        "text": "I am the subtitle, lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+        "cta": {
+          "button": {
+            "href": "#",
+            "text": "Call to action",
+            "is_anchor": true
+          }
+        }
+      }
+    }
+  ],
   "product": {
     "href": "#",
     "image": "http://placehold.it/300x445",

@@ -1,6 +1,36 @@
 .jumbotron {
   background-color: #f6f6f6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 60px 0;
+
+  &.has-background {
+    position: relative;
+
+    .jumbotron__body {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+
+      h1,
+      h2,
+      h3 {
+        color: #fff;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: @gray-darker;
+      opacity: .6;
+      content: '';
+    }
+  }
 
   &__body {
     .container-fluid();
