@@ -1,4 +1,4 @@
-<div class="jumbotron {{ styleModifier }} {{#jumbotron.image}} lazyload{{/jumbotron.image}}" {{#jumbotron.image}} data-size="auto" style="background-image: url({{ jumbotron.image }})"{{/jumbotron.image}}>
+<div class="jumbotron {{ styleModifier }} {{#jumbotron.image}} lazyload{{/jumbotron.image}}" {{#jumbotron.image}} data-sizes="auto" data-bgset="{{ jumbotron.image.640 }} 640w, {{ jumbotron.image.1024 }} 1024w, {{ jumbotron.image.1920 }} 1920w" {{/jumbotron.image}}>
   <div class="jumbotron__body">
     <div class="jumbotron__body__wrapper">
       {{#jumbotron.breadcrumb}}

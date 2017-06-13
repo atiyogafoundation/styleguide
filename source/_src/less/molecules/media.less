@@ -213,7 +213,6 @@
     .set-default-style();
 
     @media (min-width: @screen-md-min) {
-
       .media__header {
         .make-md-column(9.5);
         padding-bottom: calc((100% * 6 / @grid-columns)~"- 60px");
@@ -221,17 +220,6 @@
         + .media__body {
           .make-md-column(4.5);
         }
-      }
-
-      .media__body {
-        // padding: 50px 40px !important;
-        // margin-top: 60px;
-      }
-    }
-
-    @media (min-width: @screen-lg-min) {
-      .media__body {
-        // padding: 94px 60px !important;
       }
     }
 
@@ -293,6 +281,10 @@
     > * + * {
       margin-bottom: 0;
     }
+  }
+
+  &__list {
+
   }
 
   &--dark {
