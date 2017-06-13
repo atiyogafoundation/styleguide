@@ -1,4 +1,4 @@
-<div class="jumbotron {{ styleModifier }}" style="background-image: url({{ jumbotron.image }})">
+<div class="jumbotron {{ styleModifier }} {{#jumbotron.image}} lazyload{{/jumbotron.image}}" {{#jumbotron.image}} data-size="auto" style="background-image: url({{ jumbotron.image }})"{{/jumbotron.image}}>
   <div class="jumbotron__body">
     <div class="jumbotron__body__wrapper">
       {{#jumbotron.breadcrumb}}
