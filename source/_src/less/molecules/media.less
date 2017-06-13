@@ -58,6 +58,26 @@
     .set-default-even-position();
   }
 
+  .set-hero-odd-position() {
+    @media (min-width: @screen-md-min) {
+      .media__header {
+        left: 0;
+
+        + .media__body {
+          .make-md-column-offset(7.5);
+        }
+      }
+    }
+  }
+
+  .set-hero-even-position() {
+    @media (min-width: @screen-md-min) {
+      .media__header {
+        right: 0;
+      }
+    }
+  }
+
   .set-default-style() {
     .media__header {
       padding-bottom: 80%;
@@ -189,6 +209,41 @@
     }
   }
 
+  .set-hero-style() {
+    .set-default-style();
+
+    @media (min-width: @screen-md-min) {
+
+      .media__header {
+        .make-md-column(9.5);
+        padding-bottom: calc((100% * 6 / @grid-columns)~"- 60px");
+
+        + .media__body {
+          .make-md-column(4.5);
+        }
+      }
+
+      .media__body {
+        // padding: 50px 40px !important;
+        // margin-top: 60px;
+      }
+    }
+
+    @media (min-width: @screen-lg-min) {
+      .media__body {
+        // padding: 94px 60px !important;
+      }
+    }
+
+    &:nth-child(odd) {
+      .set-hero-odd-position();
+    }
+
+    &:nth-child(even) {
+      .set-hero-even-position();
+    }
+  }
+
   .set-light-color();
   .make-row(0);
   position: relative;
@@ -250,6 +305,10 @@
 
   &--small {
     .set-small-style();
+  }
+
+  &--hero {
+    .set-hero-style();
   }
 
   @media (min-width: @screen-md-min) {
