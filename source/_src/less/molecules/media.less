@@ -86,6 +86,10 @@
     .media__body {
       padding: 35px 20px;
 
+      .media__list {
+        margin-bottom: -35px;
+      }
+
       h1,
       h2,
       h3 {
@@ -113,6 +117,10 @@
         padding: 50px 40px !important;
         margin-top: 60px;
 
+        .media__list {
+          margin-bottom: -50px;
+        }
+
         h1,
         h2,
         h3 {
@@ -128,6 +136,10 @@
     @media (min-width: @screen-lg-min) {
       .media__body {
         padding: 94px 60px !important;
+
+        .media__list {
+          margin-bottom: -94px;
+        }
 
         h1,
         h2,
@@ -257,6 +269,7 @@
 
   &__body {
     position: relative;
+    overflow: hidden;
 
     h1,
     h2,
@@ -284,7 +297,68 @@
   }
 
   &__list {
+    position: relative;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 10px;
 
+    &__item {
+      position: relative;
+      text-decoration: none;
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      color: #fff;
+      margin-bottom: 1px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: fade(@gray-dark, 20%);
+      transition: all .3s ease;
+
+      > span {
+        padding-left: 20px;
+        padding-right: 20px;
+        vertical-align: top;
+        display: table-cell;
+        text-transform: uppercase;
+
+        &:first-child {
+          .h5();
+          margin: 0;
+          color: #fff;
+          width: 100px;
+        }
+      }
+
+      h5 {
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+
+      p {
+        text-transform: none;
+        font-size: @font-size-small;
+        margin-bottom: 0;
+      }
+
+      &:hover,
+      &:focus {
+        color: #fff;
+        text-decoration: none;
+        background-color: fade(@gray-dark, 40%);
+      }
+    }
+
+    @media (min-width: @screen-md-min) {
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+
+    @media (min-width: @screen-lg-min) {
+      margin-left: -60px;
+      margin-right: -60px;
+    }
   }
 
   &--dark {

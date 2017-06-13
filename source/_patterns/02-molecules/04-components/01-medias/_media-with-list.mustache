@@ -6,6 +6,17 @@
   <div class="media__body">
     {{{ body }}}
     <p>{{> atoms-button-icon }}</p>
+    <div class="media__list">
+      {{#list}}
+        <a href="#" class="media__list__item">
+          <span>{{{ date }}}</span>
+          <span>
+            <h5>{{ title }}</h5>
+            <p>{{ text }}</p>
+          </span>
+        </a>
+      {{/list}}
+    </div>
   </div>
 </div>
 {{/media}}

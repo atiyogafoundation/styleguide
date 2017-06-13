@@ -153,13 +153,30 @@
   },
   "media": {
     "href": "#",
-    "image": "http://placehold.it/490x480",
+    "image": "http://placehold.it/1280x600",
     "body": "<h2><a href=\"#\">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia commodi sequi <a href=\"#\">libero explicabo consequuntur</a> ad, delectus optio magnam, facere molestias perspiciatis, pariatur eveniet? Modi expedita nisi sit, placeat voluptatem natus.</p>",
     "button-icon": {
       "href": "#",
       "icon": "link",
       "text": "Read More"
-    }
+    },
+    "list": [
+      {
+        "date": "07 Sep <br> 2016",
+        "title": "Merigar West",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae saepe dicta cumque."
+      },
+      {
+        "date": "07 Sep <br> 2016",
+        "title": "Merigar West",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae saepe dicta cumque."
+      },
+      {
+        "date": "07 Sep <br> 2016",
+        "title": "Merigar West",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae saepe dicta cumque."
+      }
+    ]
   },
   "carousel": {
     "title": "Lorem ipsum dolor sit amet",
