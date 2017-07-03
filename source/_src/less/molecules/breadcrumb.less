@@ -6,7 +6,7 @@
   border-radius: 0;
 
   a {
-    color: inherit;
+    color: inherit !important;
     text-decoration: none;
 
     &:hover,
@@ -21,6 +21,14 @@
 
   > li+li:before {
     color: @brand-primary;
+
+    body.has-color-khaita & { color: @color-khaita; }
+    body.has-color-vajra-dance & { color: @color-vajra-dance; }
+    body.has-color-yantra-yoga & { color: @color-yantra-yoga; }
+    body.has-color-visual-art & { color: @color-visual-art; }
+    body.has-color-tibetan-medicine & { color: @color-tibetan-medicine; }
+    body.has-color-tibetan-language & { color: @color-tibetan-language; }
+    body.has-color-inner-knowledge & { color: @color-inner-knowledge; }
   }
 
   li:last-child {

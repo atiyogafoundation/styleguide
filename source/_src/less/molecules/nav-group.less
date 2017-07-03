@@ -1,16 +1,33 @@
 .nav-group {
+  .set-color(@color: @gray-dark, @hover: @brand-primary) {
+    a {
+      color: @color !important;
+
+      &:hover,
+      &:focus,
+      &.active {
+        color: @hover !important;
+      }
+    }
+
+    &__head {
+      &:hover,
+      &:focus {
+        color: @hover !important;
+      }
+    }
+
+    &__list {
+      border-top: 3px solid @hover;
+    }
+  }
+
+  .set-color();
   font-family: @font-family-secondary;
   font-size: @font-size-small-mobile;
 
   a {
-    color: @gray-dark;
     text-decoration: none;
-
-    &:hover,
-    &:focus,
-    &.active {
-      color: @brand-primary;
-    }
   }
 
   &__head {
@@ -18,11 +35,6 @@
     padding-bottom: floor(@line-height-computed-mobile / 2.1);
     display: block;
     font-weight: 800;
-
-    &:hover,
-    &:focus {
-      color: @brand-primary;
-    }
 
     &:after {
       font-family: @font-family-icons;
@@ -37,7 +49,6 @@
     .list-unstyled();
     padding: 0;
     margin: 0;
-    border-top: 3px solid @brand-primary;
 
     li {
       padding: 0;
@@ -109,6 +120,13 @@
         margin-left: floor(-@line-height-computed / 2);
       }
     }
-
   }
+
+  body.has-color-khaita & { .set-color(@gray-dark, @color-khaita); }
+  body.has-color-vajra-dance & { .set-color(@gray-dark, @color-vajra-dance); }
+  body.has-color-yantra-yoga & { .set-color(@gray-dark, @color-yantra-yoga); }
+  body.has-color-visual-art & { .set-color(@gray-dark, @color-visual-art); }
+  body.has-color-tibetan-medicine & { .set-color(@gray-dark, @color-tibetan-medicine); }
+  body.has-color-tibetan-language & { .set-color(@gray-dark, @color-tibetan-language); }
+  body.has-color-inner-knowledge & { .set-color(@gray-dark, @color-inner-knowledge); }
 }
