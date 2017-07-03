@@ -321,13 +321,8 @@
           "breadcrumb": false,
           "title": "I am the title of this page ",
           "text": "I am the subtitle, lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-          "cta": {
-            "button": {
-              "href": "#",
-              "text": "Call to action",
-              "is_anchor": true
-            }
-          }
+          "href": "#",
+          "cta": false
         }
       },
       {
@@ -340,13 +335,8 @@
           "breadcrumb": false,
           "title": "I am the title of this page 2",
           "text": "I am the subtitle, lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-          "cta": {
-            "button": {
-              "href": "#",
-              "text": "Call to action",
-              "is_anchor": true
-            }
-          }
+          "href": "#",
+          "cta": false
         }
       },
       {
@@ -359,13 +349,8 @@
           "breadcrumb": false,
           "title": "I am the title of this page 3",
           "text": "I am the subtitle, lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-          "cta": {
-            "button": {
-              "href": "#",
-              "text": "Call to action",
-              "is_anchor": true
-            }
-          }
+          "href": "#",
+          "cta": false
         }
       }
     ]

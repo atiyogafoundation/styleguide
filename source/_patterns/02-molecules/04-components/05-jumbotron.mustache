@@ -1,4 +1,11 @@
+{{^jumbotron.href }}
 <div class="jumbotron {{ styleModifier }} {{#jumbotron.image}} lazyload{{/jumbotron.image}}" {{#jumbotron.image}} data-sizes="auto" data-bgset="{{ jumbotron.image.640 }} 640w, {{ jumbotron.image.1024 }} 1024w, {{ jumbotron.image.1920 }} 1920w" {{/jumbotron.image}}>
+{{/jumbotron.href }}
+
+{{#jumbotron.href }}
+<a href="{{ jumbotron.href }}" class="jumbotron {{ styleModifier }} {{#jumbotron.image}} lazyload{{/jumbotron.image}}" {{#jumbotron.image}} data-sizes="auto" data-bgset="{{ jumbotron.image.640 }} 640w, {{ jumbotron.image.1024 }} 1024w, {{ jumbotron.image.1920 }} 1920w" {{/jumbotron.image}}>
+{{/jumbotron.href }}
+
   <div class="jumbotron__body">
     <div class="jumbotron__body__wrapper">
       {{#jumbotron.breadcrumb}}
@@ -13,4 +20,6 @@
       {{/ jumbotron.cta }}
     </div>
   </div>
-</div>
+
+{{#jumbotron.href }}</a>{{/jumbotron.href }}
+{{^jumbotron.href }}</div>{{/jumbotron.href }}
