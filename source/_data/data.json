@@ -1,4 +1,5 @@
 {
+  "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ullam ipsam magni eos? Iusto hic ducimus quisquam harum soluta aliquam dolorem voluptatem dolorum rerum, vitae eius aliquid, esse, saepe, ullam.",
   "lorem": {
     "base": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, quis optio perspiciatis. Doloribus maxime nam, nobis error molestiae. Distinctio facere omnis repellat hic perspiciatis aliquid vel voluptas quae optio porro?",
     "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda veniam consequatur perferendis hic harum sit odit fuga, quam delectus quos at quibusdam eveniet fugit molestiae, optio qui quis totam dolorem.Quos quis accusantium eos provident vitae, illo tenetur fuga voluptatibus odio, maxime odit vel cum dolore ipsam consequuntur vero unde. Et non obcaecati aliquid autem! Delectus pariatur, totam error est.Laudantium perferendis, voluptate officia illo repudiandae corporis. Unde veritatis doloribus quod neque eum, accusamus sit quae consequatur nostrum autem, architecto quis, nesciunt magni rerum exercitationem? Optio est veniam at error.",
@@ -84,6 +85,30 @@
     "icon": "cart",
     "text": "Shop online"
   },
+  "list-group": [
+    { "item" : "Lorem ipsum dolor" },
+    { "item" : "sit amet consectetur" },
+    { "item" : "consectetur adipisicing" },
+    { "item" : "ducimus illo modi" }
+  ],
+  "badges": [
+    {
+      "text": "Lorem Ipsum",
+      "badge": 14
+    },
+    {
+      "text": "Amet dolore neque",
+      "badge": 7
+    },
+    {
+      "text": "Dolor sit amet",
+      "badge": 4
+    },
+    {
+      "text": "Consectetur adipisicing",
+      "badge": 5
+    }
+  ],
   "preview": {
     "href": "#",
     "image": {
