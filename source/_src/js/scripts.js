@@ -310,6 +310,17 @@
 
 /*=====  End of Header Progress Bar  ======*/
 
+/*================================
+=            Tooltips            =
+================================*/
+
+(function($) {
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+})(jQuery);
+
+/*=====  End of Tooltips  ======*/
 
 
 
