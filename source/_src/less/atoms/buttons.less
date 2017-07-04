@@ -78,10 +78,10 @@
 
 .button-icon {
   .set-hover-color(@hover: @brand-primary) {
-    color: @hover;
+    color: @hover !important;
 
     .icon-circle {
-      border-color: @hover;
+      border-color: @hover !important;
       color: #fff;
       transition: border-color .2s ease;
 
@@ -94,7 +94,7 @@
 
   .set-color(@color: @gray-darker, @hover: @brand-primary) {
     color: @color !important;
-    border-color: @color;
+    border-color: @color !important;
 
     .icon-circle::before {
       background-color: @hover;

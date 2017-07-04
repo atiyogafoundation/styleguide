@@ -37,12 +37,20 @@
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
 
     &.active,
     &:hover,
     &:focus {
-      color: @brand-primary;
+      color: @brand-primary !important;
+
+      body.has-color-khaita & { color: @color-khaita !important; }
+      body.has-color-vajra-dance & { color: @color-vajra-dance !important; }
+      body.has-color-yantra-yoga & { color: @color-yantra-yoga !important; }
+      body.has-color-visual-art & { color: @color-visual-art !important; }
+      body.has-color-tibetan-medicine & { color: @color-tibetan-medicine !important; }
+      body.has-color-tibetan-language & { color: @color-tibetan-language !important; }
+      body.has-color-inner-knowledge & { color: @color-inner-knowledge !important; }
     }
   }
 
@@ -319,6 +327,14 @@
     height: 4px;
     z-index: 3;
     background-color: @brand-primary;
+
+    body.has-color-khaita & { background-color: @color-khaita; }
+    body.has-color-vajra-dance & { background-color: @color-vajra-dance; }
+    body.has-color-yantra-yoga & { background-color: @color-yantra-yoga; }
+    body.has-color-visual-art & { background-color: @color-visual-art; }
+    body.has-color-tibetan-medicine & { background-color: @color-tibetan-medicine; }
+    body.has-color-tibetan-language & { background-color: @color-tibetan-language; }
+    body.has-color-inner-knowledge & { background-color: @color-inner-knowledge; }
   }
 
   @media (min-width: @screen-sm-min) {

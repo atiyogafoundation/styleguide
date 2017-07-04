@@ -81,6 +81,14 @@
     &:focus {
       .button-icon {
         .button-icon.set-hover-color();
+
+        body.has-color-khaita & { .button-icon.set-hover-color(@color-khaita); }
+        body.has-color-vajra-dance & { .button-icon.set-hover-color(@color-vajra-dance); }
+        body.has-color-yantra-yoga & { .button-icon.set-hover-color(@color-yantra-yoga); }
+        body.has-color-visual-art & { .button-icon.set-hover-color(@color-visual-art); }
+        body.has-color-tibetan-medicine & { .button-icon.set-hover-color(@color-tibetan-medicine); }
+        body.has-color-tibetan-language & { .button-icon.set-hover-color(@color-tibetan-language); }
+        body.has-color-inner-knowledge & { .button-icon.set-hover-color(@color-inner-knowledge); }
       }
 
       .preview__image {
