@@ -108,6 +108,14 @@
 
   .set-light-color() {
     .set-color(#fff);
+
+    body.has-color-khaita & { .set-color(#fff, @color-khaita); }
+    body.has-color-vajra-dance & { .set-color(#fff, @color-vajra-dance); }
+    body.has-color-yantra-yoga & { .set-color(#fff, @color-yantra-yoga); }
+    body.has-color-visual-art & { .set-color(#fff, @color-visual-art); }
+    body.has-color-tibetan-medicine & { .set-color(#fff, @color-tibetan-medicine); }
+    body.has-color-tibetan-language & { .set-color(#fff, @color-tibetan-language); }
+    body.has-color-inner-knowledge & { .set-color(#fff, @color-inner-knowledge); }
   }
 
   .set-color();

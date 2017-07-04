@@ -23,7 +23,7 @@
   a {
     .square(45px);
     text-decoration: none;
-    color: @gray-darker;
+    color: @gray-darker !important;
     display: block;
     text-align: center;
     white-space: nowrap;
@@ -34,7 +34,15 @@
     &:focus,
     &.active {
       background-color: #f6f6f6;
-      color: @brand-primary;
+      color: @brand-primary !important;
+
+      body.has-color-khaita & { color: @color-khaita !important; }
+      body.has-color-vajra-dance & { color: @color-vajra-dance !important; }
+      body.has-color-yantra-yoga & { color: @color-yantra-yoga !important; }
+      body.has-color-visual-art & { color: @color-visual-art !important; }
+      body.has-color-tibetan-medicine & { color: @color-tibetan-medicine !important; }
+      body.has-color-tibetan-language & { color: @color-tibetan-language !important; }
+      body.has-color-inner-knowledge & { color: @color-inner-knowledge !important; }
     }
   }
 

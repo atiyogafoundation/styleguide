@@ -254,6 +254,14 @@
     overflow: hidden;
     height: 0;
     background-color: @brand-primary;
+
+    body.has-color-khaita & { background-color: @color-khaita; }
+    body.has-color-vajra-dance & { background-color: @color-vajra-dance; }
+    body.has-color-yantra-yoga & { background-color: @color-yantra-yoga; }
+    body.has-color-visual-art & { background-color: @color-visual-art; }
+    body.has-color-tibetan-medicine & { background-color: @color-tibetan-medicine; }
+    body.has-color-tibetan-language & { background-color: @color-tibetan-language; }
+    body.has-color-inner-knowledge & { background-color: @color-inner-knowledge; }
   }
 
   &__image {
@@ -308,7 +316,7 @@
       display: table;
       width: 100%;
       table-layout: fixed;
-      color: #fff;
+      color: #fff !important;
       margin-bottom: 1px;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -344,7 +352,7 @@
 
       &:hover,
       &:focus {
-        color: #fff;
+        color: #fff ;
         text-decoration: none;
         background-color: fade(@gray-dark, 40%);
       }

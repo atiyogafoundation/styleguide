@@ -127,7 +127,7 @@
   }
 
   &--event {
-    color: @text-color;
+    color: @text-color !important;
     background-color: transparent !important;
 
     .card__body {
@@ -140,8 +140,12 @@
       h4,
       h5,
       h6 {
-        color: @gray-darker;
+        color: @gray-darker !important;
       }
+    }
+
+    a {
+      color: inherit !important;
     }
 
     .card__tags {
