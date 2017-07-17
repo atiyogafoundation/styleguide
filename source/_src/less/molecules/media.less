@@ -244,6 +244,19 @@
     }
   }
 
+  .set-color(@color: @brand-primary) {
+    &__header {
+      background-color: @color;
+    }
+
+    &__body a {
+      &:hover,
+      &:focus {
+        color: @color;
+      }
+    }
+  }
+
   .set-light-color();
   .make-row(0);
   position: relative;
@@ -254,14 +267,6 @@
     overflow: hidden;
     height: 0;
     background-color: @brand-primary;
-
-    body.has-color-khaita & { background-color: @color-khaita; }
-    body.has-color-vajra-dance & { background-color: @color-vajra-dance; }
-    body.has-color-yantra-yoga & { background-color: @color-yantra-yoga; }
-    body.has-color-visual-art & { background-color: @color-visual-art; }
-    body.has-color-tibetan-medicine & { background-color: @color-tibetan-medicine; }
-    body.has-color-tibetan-language & { background-color: @color-tibetan-language; }
-    body.has-color-inner-knowledge & { background-color: @color-inner-knowledge; }
   }
 
   &__image {
@@ -291,14 +296,6 @@
         &:hover,
         &:focus {
           color: @brand-primary;
-
-          body.has-color-khaita & { color: @color-khaita; }
-          body.has-color-vajra-dance & { color: @color-vajra-dance; }
-          body.has-color-yantra-yoga & { color: @color-yantra-yoga; }
-          body.has-color-visual-art & { color: @color-visual-art; }
-          body.has-color-tibetan-medicine & { color: @color-tibetan-medicine; }
-          body.has-color-tibetan-language & { color: @color-tibetan-language; }
-          body.has-color-inner-knowledge & { color: @color-inner-knowledge; }
         }
       }
     }
@@ -403,4 +400,25 @@
       z-index: 1;
     }
   }
+
+  body.has-color-khaita &,
+  &.has-color-khaita { .set-color(@color-khaita); }
+
+  body.has-color-vajra-dance &,
+  &.has-color-vajra-dance { .set-color(@color-vajra-dance); }
+
+  body.has-color-yantra-yoga &,
+  &.has-color-yantra-yoga { .set-color(@color-yantra-yoga); }
+
+  body.has-color-visual-art &,
+  &.has-color-visual-art { .set-color(@color-visual-art); }
+
+  body.has-color-tibetan-medicine &,
+  &.has-color-tibetan-medicine { .set-color(@color-tibetan-medicine); }
+
+  body.has-color-tibetan-language &,
+  &.has-color-tibetan-language { .set-color(@color-tibetan-language); }
+
+  body.has-color-inner-knowledge &,
+  &.has-color-inner-knowledge { .set-color(@color-inner-knowledge); }
 }
