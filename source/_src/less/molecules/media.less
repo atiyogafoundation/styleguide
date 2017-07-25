@@ -245,14 +245,37 @@
   }
 
   .set-color(@color: @brand-primary) {
-    &__header {
-      background-color: @color;
+    .media__header {
+      background-color: @color !important;
     }
 
-    &__body a {
-      &:hover,
-      &:focus {
+    .media__body {
+      a {
         color: @color;
+      }
+
+      h1 a,
+      h2 a,
+      h3 a {
+        color: inherit;
+
+        &:hover,
+        &:focus {
+          color: @color !important;
+        }
+      }
+
+      .icon-circle::before {
+        background-color: @color;
+      }
+
+      .button-icon:hover,
+      .button-icon:focus {
+        .button-icon.set-hover-color(@color);
+
+        .icon-circle {
+          border-color: @color !important;
+        }
       }
     }
   }
