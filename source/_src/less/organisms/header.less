@@ -40,8 +40,7 @@
     color: #fff !important;
 
     &.active,
-    &:hover,
-    &:focus {
+    &:hover {
       color: @brand-primary !important;
 
       body.has-color-khaita & { color: @color-khaita !important; }
@@ -261,8 +260,7 @@
             height: 54px;
             padding: 15px 20px;
 
-            &:hover,
-            &:focus {
+            &:hover {
               color: @gray-darker;
               background-color: #fff;
             }
@@ -277,6 +275,7 @@
       top: 54px;
       left: 0;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
 
       ul {
         .list-unstyled();

@@ -64,7 +64,7 @@
         breakpoints: {
           480:  { slidesPerView: 1 },
           790:  { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          1280: { slidesPerView: 3 },
           1920: { slidesPerView: 3.2 }
         }
       });
@@ -96,7 +96,7 @@
         breakpoints: {
           480:  { slidesPerView: 1 },
           790:  { slidesPerView: 2 },
-          1024: { slidesPerView: 4 },
+          1280: { slidesPerView: 4 },
           1920: {
             slidesPerView: 5,
             slidesPerGroup: 2
@@ -236,23 +236,23 @@
 =            Post Sharer Affix            =
 =========================================*/
 
-(function($) {
-  var
-    $postSharer = $('.post__sharer .sharer'),
-    $lastSectionText = $('.post__body .section[data-type="text"]')
-  ;
+// (function($) {
+//   var
+//     $postSharer = $('.post__sharer .sharer'),
+//     $lastSectionText = $('.post__body .section[data-type="text"]')
+//   ;
 
-  if ($lastSectionText.next().length > 0) {
-    $postSharer.affix({
-      offset: {
-        top: 50 + $postSharer.outerHeight(),
-        bottom: function () {
-          return (this.bottom = $lastSectionText.next().offset().top + 100);
-        }
-      }
-    });
-  }
-})(jQuery);
+//   if ($lastSectionText.next().length > 0) {
+//     $postSharer.affix({
+//       offset: {
+//         top: 50 + $postSharer.outerHeight(),
+//         bottom: function () {
+//           return (this.bottom = $lastSectionText.next().offset().top + 100);
+//         }
+//       }
+//     });
+//   }
+// })(jQuery);
 
 /*=====  End of Post Sharer Affix  ======*/
 

@@ -4,8 +4,7 @@
     background-color: @background;
     border-color: @background;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: @color;
       color: @background !important;
       border-color: @background;
@@ -17,8 +16,7 @@
     color: @color !important;
     border-color: @color;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: @color-hover !important;
       background-color: @color;
     }
@@ -57,8 +55,7 @@
     padding-right: 6px;
     padding-left: 6px;
 
-    &:hover,
-    &:focus {
+    &:hover {
       text-decoration: underline;
     }
 
@@ -100,8 +97,7 @@
       background-color: @hover;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       .set-hover-color(@hover);
     }
   }
@@ -161,8 +157,7 @@
       color: @hover;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: @hover !important;
     }
   }
@@ -192,8 +187,7 @@
   .set-color(@color: @brand-primary) {
     background-color: @color;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: darken(@color, 10%);
     }
   }
@@ -202,13 +196,16 @@
   position: relative;
   text-transform: uppercase;
   color: #fff !important;
-  text-decoration: none;
+  text-decoration: none !important;
   display: block;
   font-family: @font-family-secondary;
   font-weight: 800;
   font-size: @font-size-small;
-  padding: 24px 28px;
+  padding: 24px 72px 24px 28px;
   transition: background-color .2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   .icon-circle {
     position: absolute;
@@ -218,10 +215,12 @@
     transform: translateY(-50%);
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: #fff !important;
-    text-decoration: none;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    padding: 24px 92px 24px 28px;
   }
 
   body.has-color-khaita & { .set-color(@color-khaita); }

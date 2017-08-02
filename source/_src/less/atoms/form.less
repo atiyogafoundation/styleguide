@@ -3,6 +3,20 @@
   font-family: @font-family-secondary;
   font-size: @font-size-small;
   font-weight: 800;
+  box-shadow: none;
+
+  &.has-select {
+    &:before {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      content: '⌄';
+      display: inline-block;
+      line-height: 0;
+      font-size: 25px;
+      margin-top: -3px;
+    }
+  }
 
   select {
     .square(100%);
@@ -11,6 +25,8 @@
     left: 0;
     background-color: transparent;
     border: 0;
+    padding: 6px 12px;
+    -webkit-appearance: none;
 
     option {
       color: @text-color;

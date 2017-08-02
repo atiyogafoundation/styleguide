@@ -259,7 +259,7 @@
         color: @text-color;
 
         a {
-          text-decoration: none;
+          text-decoration: none !important;
         }
       }
 
@@ -278,8 +278,7 @@
           background-color: @text-color;
         }
 
-        &:hover,
-        &:focus {
+        &:hover {
           .button-icon.set-hover-color(@text-color);
 
           .icon-circle {
@@ -289,36 +288,6 @@
         }
       }
     }
-
-    // .media__body {
-    //   a {
-    //     color: @color;
-    //   }
-
-    //   h1 a,
-    //   h2 a,
-    //   h3 a {
-    //     color: inherit;
-
-    //     &:hover,
-    //     &:focus {
-    //       color: @color !important;
-    //     }
-    //   }
-
-    //   .icon-circle::before {
-    //     background-color: @color;
-    //   }
-
-    //   .button-icon:hover,
-    //   .button-icon:focus {
-    //     .button-icon.set-hover-color(@color);
-
-    //     .icon-circle {
-    //       border-color: @color !important;
-    //     }
-    //   }
-    // }
   }
 
   .set-light-color();
@@ -354,11 +323,10 @@
       .h1();
 
       a {
-        text-decoration: none;
+        text-decoration: none !important;
         color: inherit;
 
-        &:hover,
-        &:focus {
+        &:hover {
           color: @brand-primary;
         }
       }
@@ -381,7 +349,7 @@
 
     &__item {
       position: relative;
-      text-decoration: none;
+      text-decoration: none !important;
       display: table;
       width: 100%;
       table-layout: fixed;
@@ -419,10 +387,8 @@
         margin-bottom: 0;
       }
 
-      &:hover,
-      &:focus {
+      &:hover {
         color: #fff ;
-        text-decoration: none;
         background-color: fade(@gray-dark, 40%);
       }
     }
