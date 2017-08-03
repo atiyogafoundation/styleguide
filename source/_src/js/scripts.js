@@ -47,7 +47,7 @@
       .find('.swiper-container')
       .swiper({
         spaceBetween: 20,
-        speed: 800,
+        speed: device.desktop() ? 800 : 300,
         simulateTouch: false,
         pagination: (device.mobile() && !device.tablet()) ? $current.find('.carousel__pagination') : $current.find('.carousel__fraction'),
         paginationType: (device.mobile() && !device.tablet()) ? "bullets" : "fraction",
@@ -79,7 +79,7 @@
       .find('.swiper-container')
       .swiper({
         spaceBetween: 80,
-        speed: 800,
+        speed: device.desktop() ? 800 : 300,
         simulateTouch: false,
         pagination: (device.mobile() && !device.tablet()) ? $current.find('.carousel__pagination') : $current.find('.carousel__fraction'),
         paginationType: (device.mobile() && !device.tablet()) ? "bullets" : "fraction",
@@ -113,7 +113,7 @@
     $current
       .find('.swiper-container')
       .swiper({
-        speed: 1000,
+        speed: device.desktop() ? 1000 : 300,
         loop: true,
         autoplay: 4000,
         simulateTouch: false,
