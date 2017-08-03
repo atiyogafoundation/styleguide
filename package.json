@@ -6,6 +6,7 @@
   "devDependencies": {
     "gulp": "gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.7.0",
     "gulp-concat": "^2.6.0",
     "gulp-foreach": "^0.1.0",
     "gulp-jshint": "^2.0.1",
@@ -20,8 +21,8 @@
     "less-plugin-glob": "^1.1.1",
     "merge-stream": "^1.0.0"
   },
-  "scripts" : {
-    "preinstall" : "npm link browser-sync jshint"
+  "scripts": {
+    "preinstall": "npm link browser-sync jshint"
   },
   "repository": {
     "type": "git",

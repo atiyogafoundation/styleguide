@@ -6,6 +6,7 @@ var shell = require('gulp-shell');
 var config = require('./config.json');
 var merge = require('merge-stream');
 var concatCss = require('gulp-concat-css');
+var cleanCSS = require('gulp-clean-css');
 
 // Errors handler
 var onError = function(err) {
@@ -147,6 +148,7 @@ gulp.task('build:vendors-css', function() {
   if (paths().builds.css.vendors) {
     vendors = gulp.src(paths().builds.css.vendors)
       .pipe(concatCss('vendors.min.css', { rebaseUrls: false }))
+      .pipe(cleanCSS().minify())
       .pipe(gulp.dest('source/css'))
       .pipe(plugins.notify({ message: 'CSS: vendors minified', onLast: true }));
   }

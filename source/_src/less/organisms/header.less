@@ -8,21 +8,21 @@
         }
 
         &:before {
-          transform: translateY(6px) rotate(45deg);
+          transform: translateY(0) rotate(45deg);
         }
 
         &:after {
-          transform: translateY(-8px) rotate(-45deg);
+          transform: translateY(0) rotate(-45deg);
         }
       }
 
       &:hover .hamburgher {
         &:before {
-          transform: translateY(6px) rotate(45deg) scale(1.1);
+          transform: translateY(0) rotate(45deg) scale(1.1);
         }
 
         &:after {
-          transform: translateY(-8px) rotate(-45deg) scale(1.1);
+          transform: translateY(0) rotate(-45deg) scale(1.1);
         }
       }
     }
@@ -169,52 +169,44 @@
     }
 
     .hamburgher {
-      .size(22px, 17px);
+      .square(22px);
       position: relative;
       display: inline-block;
       padding: 0;
+      vertical-align: middle;
 
+      &__line,
       &:before,
       &:after {
-        .size(22px, 3px);
+        .size(100%, 2px);
         background-color: #fff;
         position: absolute;
         display: block;
         top: 50%;
         left: 0;
+        margin-top: -1px;
         content: '';
         transition: all .4s ease;
         border-radius: 7px;
-        transition: transform .32s ease;
       }
 
       &:before {
-        margin-top: -5px;
+        transform: translateY(-7px);
       }
 
       &:after {
-        margin-top: 9px;
-      }
-
-      &__line {
-        .size(22px, 3px);
-        position: relative;
-        top: -3px;
-        display: inline-block;
-        background-color: #fff;
-        border-radius: 7px;
-        transition: transform .32s ease;
+        transform: translateY(7px);
       }
     }
 
     &:hover {
       .hamburgher {
         &:before {
-          transform: scaleX(0.6);
+          transform: translateY(-7px) scaleX(0.6);
         }
 
         &:after {
-          transform: scaleX(0.6);
+          transform: translateY(7px) scaleX(0.6);
         }
       }
     }
