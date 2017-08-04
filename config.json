@@ -34,13 +34,6 @@
         "src" : "source/_src/less/*.less",
         "dist" : "source/css"
       },
-      "css": {
-        "vendors": [
-          "bower_components/lightgallery/dist/css/lightgallery.min.css",
-          "bower_components/lightgallery/dist/css/lg-transitions.min.css",
-          "bower_components/outdated-browser/outdatedbrowser/outdatedbrowser.min.css"
-        ]
-      },
       "js" : {
         "src" : "source/_src/js",
         "dist" : "source/js",

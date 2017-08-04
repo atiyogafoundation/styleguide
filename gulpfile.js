@@ -142,18 +142,6 @@ gulp.task('build:vendors-js', function() {
 
 });
 
-gulp.task('build:vendors-css', function() {
-  var vendors;
-
-  if (paths().builds.css.vendors) {
-    vendors = gulp.src(paths().builds.css.vendors)
-      .pipe(concatCss('vendors.min.css', { rebaseUrls: false }))
-      .pipe(cleanCSS().minify())
-      .pipe(gulp.dest('source/css'))
-      .pipe(plugins.notify({ message: 'CSS: vendors minified', onLast: true }));
-  }
-});
-
 // CSS Copy
 gulp.task('copy:css', function(){
   return gulp.src(path.resolve(paths().source.css, '*.css'))
