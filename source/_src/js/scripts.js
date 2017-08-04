@@ -216,18 +216,18 @@
 =            Footer Scroll Top            =
 =========================================*/
 
-(function($) {
+(function($, device) {
 
   $('.footer__scroll-top').on('click', function(e) {
     e.preventDefault();
 
     $.scrollTo(0, 1000, {
       axis: 'y',
-      interrupt: true
+      interrupt: device.desktop()
     });
   });
 
-})(jQuery);
+})(jQuery, device);
 
 /*=====  End of Footer Scroll Top  ======*/
 
